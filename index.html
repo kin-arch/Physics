@@ -130,6 +130,28 @@
         border-radius: 5px;
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
       }
+      @media (max-width: 768px) {
+        .div {
+          flex-direction: column;
+        }
+        .right {
+          width: 100%;
+          position: relative;
+          top: auto;
+          height: 80vh;
+          margin-top: 30px;
+          margin-bottom: 30px;
+        }
+        .question-block,
+        .long-question-block {
+          width: 100%;
+          box-sizing: border-box;
+        }
+        .navbar {
+          flex-direction: column;
+          gap: 10px;
+        }
+      }
     </style>
   </head>
   <body>
@@ -184,11 +206,11 @@
             <ul>
               <li>
                 <strong>Base quantities:</strong> Fundamental quantities not
-                derived from others (length, mass, time).
+                derived from others (length (l) - meter, mass (m) - kilogram, time (t) - second).
               </li>
               <li>
                 <strong>Derived quantities:</strong> Obtained by combining base
-                quantities (velocity, force, energy).
+                quantities (velocity (v) - m/s, force (F) - Newton, energy (E) - Joule).
               </li>
               <li>
                 Example:
