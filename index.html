@@ -1,0 +1,2935 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet" />
+    <style>
+      @page {
+        size: A4;
+        margin: 20mm;
+        background-color: #ffffff;
+        @bottom-right {
+          content: counter(page);
+          font-size: 9pt;
+          color: #666;
+        }
+      }
+      body {
+        font-family: "Segoe UI", Calibri, sans-serif;
+        font-size: 10.5pt;
+        line-height: 1.5;
+        color: #333;
+        margin: 0;
+        padding: 0;
+      }
+      .header {
+        background-color: #2c3e50;
+        color: white;
+        padding: 20px;
+        text-align: center;
+        margin-bottom: 30px;
+      }
+      h1 {
+        margin: 0;
+        font-size: 20pt;
+        letter-spacing: 1px;
+      }
+      .question-block,
+      .long-question-block {
+        margin-bottom: 15px;
+        margin-top: 15px;
+        page-break-inside: avoid;
+        border-left: 3px solid #3498db;
+        padding-left: 15px;
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 15px;
+        border-right: 1px solid #ccc;
+        padding-right: 15px;
+        border-top: 1px solid #ccc;
+        padding-top: 15px;
+
+        width: 60vw;
+      }
+      .question-text,
+      .long-question-text {
+        font-weight: bold;
+        color: #2c3e50;
+        margin-bottom: 5px;
+        display: block;
+      }
+      .answer-text,
+      .long-answer-text {
+        display: block;
+        margin-left: 5px;
+      }
+      ul {
+        margin: 5px 0;
+        padding-left: 20px;
+      }
+      li {
+        margin-bottom: 3px;
+      }
+      .math {
+        font-family: "Cambria Math", "Times New Roman", serif;
+        font-style: italic;
+      }
+      .footer {
+        margin-top: 30px;
+        font-size: 8pt;
+        text-align: center;
+        color: #999;
+        border-top: 1px solid #eee;
+        padding-top: 10px;
+      }
+      .navbar {
+        background-color: #34495e;
+        padding: 15px 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+      .navbar a {
+        color: white;
+        text-decoration: none;
+        margin: 0 15px;
+        font-weight: bold;
+        font-size: 11pt;
+      }
+      .navbar a:hover {
+        text-decoration: underline;
+      }
+      .div {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        padding: 0 20px;
+      }
+      .left {
+        flex: 1;
+      }
+      .right {
+        width: 35vw;
+        position: sticky;
+        top: 80px;
+        height: 85vh;
+        margin-top: 15px;
+      }
+      .right .pdf-viewer {
+        width: 100%;
+        height: 100%;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div style="color: #ecf0f1; font-family: 'Dancing Script', cursive; font-size: 24pt; font-weight: 700; letter-spacing: 1px;">Hasnain Ali</div>
+      <div>
+        <a href="#short-questions">Short Questions</a>
+        <a href="#long-questions">Long Questions</a>
+        <a href="#numerical-questions">Numerical Questions</a>
+        <a href="#numerical-explanations">Numerical Explanations</a>
+      </div>
+    </nav>
+    <div class="div">
+    <div class="left">
+      <div class="header" id="short-questions">
+        <h1>Physics Short Questions & Answers</h1>
+        <p>Comprehensive Revision Guide</p>
+      </div>
+
+      <!-- short Questions -->
+
+      <div>
+        <div class="question-block">
+          <span class="question-text"
+            >1. Differentiate between physical and non-physical
+            quantities.</span
+          >
+          <div class="answer-text">
+            <ul>
+              <li>
+                <strong>Physical quantities:</strong> Measurable and expressed
+                with units (e.g., length in meter, mass in kilogram).
+              </li>
+              <li>
+                <strong>Non-physical quantities:</strong> Cannot be measured and
+                have no units (e.g., love, honesty).
+              </li>
+              <li>
+                Physical quantities are used in scientific calculations;
+                non-physical are abstract.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="question-block">
+          <span class="question-text"
+            >2. Differentiate between base and derived physical quantities with
+            examples.</span
+          >
+          <div class="answer-text">
+            <ul>
+              <li>
+                <strong>Base quantities:</strong> Fundamental quantities not
+                derived from others (length, mass, time).
+              </li>
+              <li>
+                <strong>Derived quantities:</strong> Obtained by combining base
+                quantities (velocity, force, energy).
+              </li>
+              <li>
+                Example:
+                <span class="math">Force = mass × acceleration</span> (derived).
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="question-block">
+          <span class="question-text"
+            >3. Express numbers in scientific notation.</span
+          >
+          <div class="answer-text">
+            Scientific notation is written as
+            <span class="math">a × 10<sup>n</sup></span
+            >, where <span class="math">1 ≤ a < 10</span>.
+            <ul>
+              <li>
+                <span class="math">4500 = 4.5 × 10<sup>3</sup></span>
+              </li>
+              <li>
+                <span class="math">0.002 = 2 × 10<sup>-3</sup></span>
+              </li>
+            </ul>
+            Used to simplify very large or very small numbers.
+          </div>
+        </div>
+
+        <div class="question-block">
+          <span class="question-text"
+            >4. Convert 4000 nanograms into micrograms.</span
+          >
+          <div class="answer-text">
+            <span class="math">1 microgram = 1000 nanograms</span><br />
+            <span class="math">4000 ng ÷ 1000 = 4 μg</span>
+          </div>
+        </div>
+
+        <div class="question-block">
+          <span class="question-text"
+            >5. Show that micro is 1000 times smaller than milli.</span
+          >
+          <div class="answer-text">
+            <span class="math">Milli = 10<sup>-3</sup></span
+            ><br />
+            <span class="math">Micro = 10<sup>-6</sup></span
+            ><br />
+            Difference:
+            <span class="math"
+              >10<sup>-6</sup> ÷ 10<sup>-3</sup> = 10<sup>-3</sup></span
+            ><br />
+            So, micro is 1000 times smaller than milli.
+          </div>
+        </div>
+
+        <div class="question-block">
+          <span class="question-text"
+            >6. Convert 25 micrometers into kilometers.</span
+          >
+          <div class="answer-text">
+            <span class="math">1 μm = 10<sup>-6</sup> m</span> and
+            <span class="math">1 m = 10<sup>-3</sup> km</span><br />
+            <span class="math"
+              >25 μm = 25 × 10<sup>-6</sup> × 10<sup>-3</sup> km</span
+            ><br />
+            <span class="math">= 25 × 10<sup>-9</sup> km</span><br />
+            <span class="math">= 2.5 × 10<sup>-8</sup> km</span>
+          </div>
+        </div>
+
+        <div class="question-block">
+          <span class="question-text"
+            >7. Differentiate between scalar and vector quantities.</span
+          >
+          <div class="answer-text">
+            <ul>
+              <li>
+                <strong>Scalar quantities:</strong> Have magnitude only (speed,
+                mass).
+              </li>
+              <li>
+                <strong>Vector quantities:</strong> Have magnitude and direction
+                (velocity, force).
+              </li>
+              <li>Vectors require direction for complete description.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="question-block">
+          <span class="question-text"
+            >8. Justify that distance, speed, time, mass, energy, temperature
+            are scalars.</span
+          >
+          <div class="answer-text">
+            These quantities only have magnitude and no direction. Example: 10 m
+            distance does not specify direction. Therefore, they are scalar
+            quantities.
+          </div>
+        </div>
+
+        <div class="question-block">
+          <span class="question-text"
+            >9. Justify that displacement, force, velocity, etc., are
+            vectors.</span
+          >
+          <div class="answer-text">
+            These quantities require both magnitude and direction. Example:
+            Velocity = 20 m/s east. Without direction, value is incomplete →
+            vector quantities.
+          </div>
+        </div>
+
+        <div class="question-block">
+          <span class="question-text"
+            >10. Steps to represent a vector in coordinate system.</span
+          >
+          <div class="answer-text">
+            <ul>
+              <li>Draw x-axis and y-axis.</li>
+              <li>Choose suitable scale.</li>
+              <li>Mark origin (0,0).</li>
+              <li>Draw an arrow showing magnitude and direction.</li>
+              <li>Label the vector properly.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="question-block">
+          <span class="question-text"
+            >11. Differentiate between precision and accuracy.</span
+          >
+          <div class="answer-text">
+            <ul>
+              <li>
+                <strong>Accuracy:</strong> How close a measured value is to the
+                true value.
+              </li>
+              <li>
+                <strong>Precision:</strong> How close repeated measurements are
+                to each other.
+              </li>
+              <li>
+                Example: If the true value is 10 cm:
+                <ul>
+                  <li>9.9, 10.1 → accurate</li>
+                  <li>8.0, 8.1 → precise but not accurate</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="question-block">
+          <span class="question-text"
+            >12. Estimate your age in seconds and minutes.</span
+          >
+          <div class="answer-text">
+            Assume age = 16 years
+            <ul>
+              <li>
+                Minutes:
+                <span class="math">16 × 365 × 24 × 60 ≈ 8,409,600 minutes</span>
+              </li>
+              <li>
+                Seconds:
+                <span class="math">8,409,600 × 60 ≈ 504,576,000 seconds</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="question-block">
+          <span class="question-text"
+            >13. Differentiate between mechanical and digital stopwatch.</span
+          >
+          <div class="answer-text">
+            <ul>
+              <li>
+                <strong>Mechanical stopwatch:</strong> Uses gears; less
+                accurate; human reading error possible.
+              </li>
+              <li>
+                <strong>Digital stopwatch:</strong> Electronic; more accurate;
+                displays exact numbers.
+              </li>
+              <li>Digital is faster and more reliable.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="question-block">
+          <span class="question-text"
+            >14. What base quantities are involved in force, pressure, power,
+            and charge?</span
+          >
+          <div class="answer-text">
+            <ul>
+              <li><strong>Force:</strong> mass, length, time</li>
+              <li><strong>Pressure:</strong> mass, length, time</li>
+              <li><strong>Power:</strong> mass, length, time</li>
+              <li><strong>Charge:</strong> current, time</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="question-block">
+          <span class="question-text"
+            >15. Is it possible to accelerate an object without speeding up or
+            slowing down? Justify.</span
+          >
+          <div class="answer-text">
+            Yes. Acceleration depends on change in velocity, not just speed. If
+            direction changes (like circular motion), velocity changes →
+            acceleration exists. Example: Object moving in a circle at constant
+            speed.
+          </div>
+        </div>
+
+        <div class="question-block">
+          <span class="question-text"
+            >16. Differentiate between average and instantaneous speed.</span
+          >
+          <div class="answer-text">
+            <ul>
+              <li>
+                <strong>Average speed:</strong> Total distance ÷ total time.
+              </li>
+              <li>
+                <strong>Instantaneous speed:</strong> Speed at a specific
+                moment.
+              </li>
+              <li>Example: Speedometer shows instantaneous speed.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="question-block">
+          <span class="question-text"
+            >17. Differentiate between uniform and non-uniform velocity.</span
+          >
+          <div class="answer-text">
+            <ul>
+              <li>
+                <strong>Uniform velocity:</strong> Constant speed and direction.
+              </li>
+              <li>
+                <strong>Non-uniform velocity:</strong> Speed or direction
+                changes.
+              </li>
+              <li>Turning motion = non-uniform velocity.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="question-block">
+          <span class="question-text"
+            >18. Define acceleration & deceleration.</span
+          >
+          <div class="answer-text">
+            <ul>
+              <li>
+                <strong>Acceleration:</strong> Rate of change of velocity with
+                time.
+              </li>
+              <li>
+                <strong>Deceleration:</strong> Negative acceleration (velocity
+                decreases).
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="question-block">
+          <span class="question-text"
+            >19. Differentiate between uniform & non-uniform acceleration.</span
+          >
+          <div class="answer-text">
+            <ul>
+              <li>
+                <strong>Uniform acceleration:</strong> Equal change in velocity
+                in equal time intervals.
+              </li>
+              <li>
+                <strong>Non-uniform acceleration:</strong> Unequal change in
+                velocity.
+              </li>
+              <li>Example: Free fall = uniform acceleration.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="question-block">
+          <span class="question-text"
+            >20. Can direction of velocity and acceleration be opposite? Explain
+            briefly.</span
+          >
+          <div class="answer-text">
+            Yes. When an object slows down, acceleration acts opposite to
+            velocity. Example: A moving car applying brakes.
+          </div>
+        </div>
+
+        <div class="question-block">
+          <span class="question-text"
+            >21. Differentiate between mass and weight.</span
+          >
+          <div class="answer-text">
+            <ul>
+              <li>
+                <strong>Mass:</strong> Amount of matter; constant; measured in
+                kg.
+              </li>
+              <li>
+                <strong>Weight:</strong> Force due to gravity; changes with
+                location; measured in newtons.
+              </li>
+              <li><span class="math">Weight = mass × gravity</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="question-block">
+          <span class="question-text"
+            >22. Differentiate between contact and non-contact forces.</span
+          >
+          <div class="answer-text">
+            <ul>
+              <li>
+                <strong>Contact forces:</strong> Require physical contact
+                (friction, tension).
+              </li>
+              <li>
+                <strong>Non-contact forces:</strong> Act at a distance (gravity,
+                magnetic).
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="question-block">
+          <span class="question-text"
+            >23. Differentiate between different types of forces.</span
+          >
+          <div class="answer-text">
+            <ul>
+              <li>
+                <strong>Gravitational (weight):</strong> Attraction between
+                masses.
+              </li>
+              <li>
+                <strong>Friction:</strong> Opposes motion between surfaces.
+              </li>
+              <li>
+                <strong>Drag/Air resistance:</strong> Opposes motion in
+                fluid/air.
+              </li>
+              <li><strong>Tension:</strong> Force in stretched string/rope.</li>
+              <li><strong>Electrostatic:</strong> Between charged objects.</li>
+              <li><strong>Magnetic:</strong> Between magnets.</li>
+              <li>
+                <strong>Thrust (driving force):</strong> Push/pull moving object
+                forward.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="question-block">
+          <span class="question-text">24. State fundamental forces.</span>
+          <div class="answer-text">
+            There are three fundamental forces (as per syllabus wording):
+            Gravitational force, Strong nuclear force, and Electroweak force.
+          </div>
+        </div>
+
+        <div class="question-block">
+          <span class="question-text"
+            >25. State limitations of Newton's laws of motion.</span
+          >
+          <div class="answer-text">
+            <ul>
+              <li>Not valid at very high speeds (near speed of light).</li>
+              <li>Not applicable at atomic/subatomic level.</li>
+              <li>Fails in strong gravitational fields.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="question-block">
+          <span class="question-text"
+            >26. State and apply Newton’s three laws.</span
+          >
+          <div class="answer-text">
+            <ul>
+              <li>
+                <strong>First Law:</strong> Object remains at rest or uniform
+                motion unless acted upon by an external force.
+              </li>
+              <li>
+                <strong>Second Law:</strong> <span class="math">F = ma</span>
+              </li>
+              <li>
+                <strong>Third Law:</strong> Every action has an equal and
+                opposite reaction.
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="question-block">
+          <span class="question-text"
+            >27. Deduce Newton’s first law from second law.</span
+          >
+          <div class="answer-text">
+            From second law: <span class="math">F = ma</span>. If
+            <span class="math">F = 0 → a = 0</span>. So velocity remains
+            constant → object stays at rest or uniform motion. This is Newton’s
+            first law.
+          </div>
+        </div>
+
+        <div class="question-block">
+          <span class="question-text"
+            >28. Why are cricket gloves padded with foam?</span
+          >
+          <div class="answer-text">
+            Foam increases the time of impact, reducing the force. From the
+            impulse concept: <span class="math">Force ↓ when time ↑</span>. So
+            it protects hands from injury.
+          </div>
+        </div>
+
+        <div class="question-block">
+          <span class="question-text"
+            >29. State Newton’s second law in terms of acceleration. Write its
+            mathematical form.</span
+          >
+          <div class="answer-text">
+            Acceleration is directly proportional to force and inversely
+            proportional to mass.<br />
+            <span class="math">a = F / m</span> or
+            <span class="math">F = ma</span>
+          </div>
+        </div>
+
+        <div class="question-block">
+          <span class="question-text"
+            >30. Explain motion of rocket/gun using Newton’s 3rd law and
+            conservation of momentum.</span
+          >
+          <div class="answer-text">
+            Rocket/gun pushes gases/bullet backward. According to Newton’s 3rd
+            law, an equal and opposite reaction pushes the rocket/gun forward.
+            Total momentum before and after remains constant.
+          </div>
+        </div>
+
+        <div class="question-block">
+          <span class="question-text"
+            >31. Explain relationship between Newton’s laws and conservation of
+            momentum.</span
+          >
+          <div class="answer-text">
+            Newton’s second law states force equals rate of change of momentum.
+            Newton’s third law says action and reaction are equal and opposite.
+            When two bodies interact, forces cancel internally, so total
+            momentum remains constant.
+          </div>
+        </div>
+
+        <div class="question-block">
+          <span class="question-text"
+            >32. Define and calculate momentum, impulse and resultant
+            force.</span
+          >
+          <div class="answer-text">
+            <ul>
+              <li>
+                <strong>Momentum (p):</strong> <span class="math">p = mv</span>
+              </li>
+              <li>
+                <strong>Impulse (J):</strong>
+                <span class="math">J = Δp = F × t</span>
+              </li>
+              <li>
+                <strong>Resultant force (F):</strong>
+                <span class="math">F = Δp / t</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="question-block">
+          <span class="question-text"
+            >33. Differentiate between rolling and sliding friction.</span
+          >
+          <div class="answer-text">
+            Rolling friction occurs when an object rolls over a surface and is
+            smaller. Sliding friction occurs when an object slides over a
+            surface and is larger. Rolling friction causes less resistance.
+          </div>
+        </div>
+
+        <div class="question-block">
+          <span class="question-text"
+            >34. Briefly describe any three methods to reduce friction.</span
+          >
+          <div class="answer-text">
+            <ul>
+              <li>Use lubricants like oil or grease.</li>
+              <li>Smooth or polish surfaces.</li>
+              <li>Use wheels or ball bearings instead of sliding.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="question-block">
+          <span class="question-text"
+            >35. Write advantages and disadvantages of friction.</span
+          >
+          <div class="answer-text">
+            <strong>Advantages:</strong> Helps in walking, allows vehicles to
+            move, helps in writing.<br />
+            <strong>Disadvantages:</strong> Causes wear and tear, produces heat
+            (energy loss), reduces efficiency of machines.
+          </div>
+        </div>
+
+        <div class="question-block">
+          <span class="question-text"
+            >36. Differentiate between like and unlike parallel forces.</span
+          >
+          <div class="answer-text">
+            Like parallel forces act in the same direction. Unlike parallel
+            forces act in opposite directions. Like forces add up, unlike forces
+            subtract.
+          </div>
+        </div>
+
+        <div class="question-block">
+          <span class="question-text"
+            >37. Compare center of mass and center of gravity.</span
+          >
+          <div class="answer-text">
+            <strong>Center of mass:</strong> point where total mass is
+            concentrated. <strong>Center of gravity:</strong> point where weight
+            acts. In uniform gravity, both points are the same.
+          </div>
+        </div>
+
+        <div class="question-block">
+          <span class="question-text"
+            >38. How can the stability of an object be improved?</span
+          >
+          <div class="answer-text">
+            Lower its center of gravity, increase base area, and keep weight
+            evenly distributed.
+          </div>
+        </div>
+
+        <div class="question-block">
+          <span class="question-text"
+            >39. Why do ice skates effortlessly slide on ice, while your shoes
+            cause skidding?</span
+          >
+          <div class="answer-text">
+            Ice skates have a thin blade that reduces friction and may create a
+            thin water layer. Shoes have larger surface area, causing irregular
+            friction and less control, leading to skidding.
+          </div>
+        </div>
+
+        <div class="question-block">
+          <span class="question-text"
+            >40. How do communication satellites stay in geostationary
+            orbit?</span
+          >
+          <div class="answer-text">
+            They move with a specific speed so that gravitational force provides
+            the required centripetal force. This keeps them fixed relative to
+            Earth.
+          </div>
+        </div>
+
+        <div class="question-block">
+          <span class="question-text"
+            >41. How does centripetal force keep a car from skidding on a
+            curve?</span
+          >
+          <div class="answer-text">
+            Centripetal force (provided by friction between tires and road)
+            keeps the car moving in a circular path. If speed is too high,
+            friction is insufficient and the car skids.
+          </div>
+        </div>
+
+        <div class="question-block">
+          <span class="question-text"
+            >42. Why does the sky appear blue? What is GPS?</span
+          >
+          <div class="answer-text">
+            Sky appears blue due to scattering of sunlight; blue light scatters
+            more. GPS (Global Positioning System) is a satellite-based system
+            used to determine location on Earth.
+          </div>
+        </div>
+
+        <div class="question-block">
+          <span class="question-text"
+            >43. Define principle of moments and its types.</span
+          >
+          <div class="answer-text">
+            <strong>Principle of moments:</strong> For equilibrium, clockwise
+            moments = anticlockwise moments.<br />
+            <strong>Clockwise moment:</strong> turning effect in clockwise
+            direction. <strong>Anticlockwise:</strong> opposite direction.
+          </div>
+        </div>
+
+        <div class="question-block">
+          <span class="question-text"
+            >44. Define and calculate spring constant.</span
+          >
+          <div class="answer-text">
+            Spring constant (<span class="math">k</span>) is the stiffness of a
+            spring. Formula: <span class="math">k = F / x</span>, where
+            <span class="math">F = force</span> and
+            <span class="math">x = extension</span>.
+          </div>
+        </div>
+
+        <div class="question-block">
+          <span class="question-text"
+            >45. Define Hooke’s law. Write applications and formula.</span
+          >
+          <div class="answer-text">
+            <strong>Hooke’s law:</strong> Extension is directly proportional to
+            applied force within elastic limit. Formula:
+            <span class="math">F = kx</span>. Applications: springs, weighing
+            machines, vehicle suspension.
+          </div>
+        </div>
+
+        <div class="question-block">
+          <span class="question-text"
+            >46. How can a small lifter lift a heavier load?</span
+          >
+          <div class="answer-text">
+            Using hydraulic systems (Pascal’s principle), a small force applied
+            over a small area produces a large force over a larger area.
+          </div>
+        </div>
+
+        <div class="question-block">
+          <span class="question-text"
+            >47. Why do static fluids exert force perpendicular to the
+            surface?</span
+          >
+          <div class="answer-text">
+            In static fluids, there is no shear stress. Pressure acts equally in
+            all directions, so force is always perpendicular to the surface.
+          </div>
+        </div>
+
+        <div class="question-block">
+          <span class="question-text"
+            >48. Define and calculate pressure and efficiency.</span
+          >
+          <div class="answer-text">
+            <strong>Pressure:</strong> <span class="math">P = F / A</span>.
+            <strong>Efficiency:</strong>
+            <span class="math">(Output / Input) × 100%</span>.
+          </div>
+        </div>
+
+        <div class="question-block">
+          <span class="question-text"
+            >49. Describe how pressure varies with force and area.</span
+          >
+          <div class="answer-text">
+            Pressure increases with force and decreases with area. Example: a
+            sharp knife cuts better because of a small area leading to high
+            pressure.
+          </div>
+        </div>
+
+        <div class="question-block">
+          <span class="question-text"
+            >50. Justify that the atmosphere exerts pressure.</span
+          >
+          <div class="answer-text">
+            Atmospheric pressure is proven by experiments like barometers and
+            suction cups. Air has weight, and this weight exerts pressure on
+            Earth’s surface.
+          </div>
+        </div>
+
+        <div class="question-block">
+          <span class="question-text"
+            >51. Describe that atmospheric pressure decreases with
+            altitude.</span
+          >
+          <div class="answer-text">
+            Atmospheric pressure is due to the weight of air above us. At higher
+            altitudes, there is less air above, so pressure decreases.
+          </div>
+        </div>
+
+        <div class="question-block">
+          <span class="question-text"
+            >52. Explain that changes in atmospheric pressure indicate weather
+            changes.</span
+          >
+          <div class="answer-text">
+            A fall in pressure usually means bad weather (rain, storms). A rise
+            in pressure indicates clear weather.
+          </div>
+        </div>
+
+        <div class="question-block">
+          <span class="question-text"
+            >53. Differentiate between manometer and barometer.</span
+          >
+          <div class="answer-text">
+            <strong>Barometer:</strong> measures atmospheric pressure.
+            <strong>Manometer:</strong> measures pressure of gases in closed
+            systems.
+          </div>
+        </div>
+
+        <div class="question-block">
+          <span class="question-text"
+            >54. Analyze the working of a liquid barometer and manometer.</span
+          >
+          <div class="answer-text">
+            <strong>Liquid barometer:</strong> uses mercury column; height shows
+            pressure. <strong>Manometer:</strong> measures pressure difference
+            using liquid columns.
+          </div>
+        </div>
+
+        <div class="question-block">
+          <span class="question-text"
+            >55. How does the shape of a thumb pin help penetrate surfaces
+            easily?</span
+          >
+          <div class="answer-text">
+            The pointed end has a very small area, producing high pressure with
+            small force, so it penetrates easily.
+          </div>
+        </div>
+
+        <div class="question-block">
+          <span class="question-text"
+            >56. State and apply the principle of conservation of energy.</span
+          >
+          <div class="answer-text">
+            Energy cannot be created or destroyed, only converted. Example: a
+            falling object converts potential energy into kinetic energy.
+          </div>
+        </div>
+
+        <div class="question-block">
+          <span class="question-text"
+            >57. Why perpetual energy machines do not work?</span
+          >
+          <div class="answer-text">
+            They violate conservation of energy and always lose energy due to
+            friction and heat.
+          </div>
+        </div>
+
+        <div class="question-block">
+          <span class="question-text"
+            >58. Differentiate between renewable and non-renewable energy.</span
+          >
+          <div class="answer-text">
+            <strong>Renewable:</strong> can be replenished (solar, wind).
+            <strong>Non-renewable:</strong> limited and exhaustible (coal, oil).
+          </div>
+        </div>
+
+        <div class="question-block">
+          <span class="question-text"
+            >59. How is useful energy obtained from fuels and geothermal?</span
+          >
+          <div class="answer-text">
+            <strong>Biofuels:</strong> burning organic matter.
+            <strong>Fossil fuels:</strong> chemical energy to heat.
+            <strong>Geothermal:</strong> heat from Earth to steam.
+          </div>
+        </div>
+
+        <div class="question-block">
+          <span class="question-text"
+            >60. Define work & power. Also define their SI units.</span
+          >
+          <div class="answer-text">
+            <strong>Work:</strong> <span class="math">W = Fd</span> (Joule).
+            <strong>Power:</strong> <span class="math">P = W / t</span> (Watt).
+          </div>
+        </div>
+
+        <div class="question-block">
+          <span class="question-text"
+            >61. State that a system cannot have 100% efficiency.</span
+          >
+          <div class="answer-text">
+            Some energy is always lost as heat, sound, or friction, so
+            efficiency is always less than 100%.
+          </div>
+        </div>
+
+        <div class="question-block">
+          <span class="question-text"
+            >62. A perpetual engine has efficiency of 1. Why it will not
+            work?</span
+          >
+          <div class="answer-text">
+            Efficiency of 1 (100%) is impossible due to energy losses.
+          </div>
+        </div>
+
+        <div class="question-block">
+          <span class="question-text"
+            >63. How does increasing power impact energy consumption?</span
+          >
+          <div class="answer-text">
+            Higher power means more energy used per unit time. So energy
+            consumption increases.
+          </div>
+        </div>
+
+        <div class="question-block">
+          <span class="question-text"
+            >64. A car has kinetic energy E<sub>k</sub>. What happens if
+            velocity is doubled?</span
+          >
+          <div class="answer-text">
+            <span class="math">KE ∝ v<sup>2</sup></span
+            >. If velocity doubles, KE becomes 4 times.
+          </div>
+        </div>
+
+        <div class="question-block">
+          <span class="question-text"
+            >65. A car moves at constant speed on a straight road. Is work
+            done?</span
+          >
+          <div class="answer-text">
+            No net work is done because there is no change in kinetic energy and
+            forces are balanced.
+          </div>
+        </div>
+
+        <div class="question-block">
+          <span class="question-text"
+            >66. Explain that energy may be stored in different forms.</span
+          >
+          <div class="answer-text">
+            Energy can be stored as: Gravitational potential, Chemical, Elastic,
+            Nuclear, Electrostatic, and Internal/thermal energy.
+          </div>
+        </div>
+
+        <div class="question-block">
+          <span class="question-text"
+            >67. Relationship between internal energy and temperature.</span
+          >
+          <div class="answer-text">
+            Internal energy increases with temperature because particles move
+            faster and have more kinetic energy.
+          </div>
+        </div>
+
+        <div class="question-block">
+          <span class="question-text"
+            >68. Describe plasma as the fourth state of matter.</span
+          >
+          <div class="answer-text">
+            Plasma is an ionized gas with free electrons and ions. It conducts
+            electricity and is found in stars.
+          </div>
+        </div>
+
+        <div class="question-block">
+          <span class="question-text"
+            >69. Relationship between motion of particles and temperature
+            (Absolute Zero).</span
+          >
+          <div class="answer-text">
+            Temperature measures average KE. At absolute zero (0 K), particle
+            motion is minimum. The graph is a direct linear relation.
+          </div>
+        </div>
+
+        <div class="question-block">
+          <span class="question-text"
+            >70. Relationship between motion of particles and temperature.</span
+          >
+          <div class="answer-text">
+            Higher temperature means faster particle motion. Lower temperature
+            means slower motion.
+          </div>
+        </div>
+
+        <div class="question-block">
+          <span class="question-text"
+            >71. Justify the need for fixed points in calibration.</span
+          >
+          <div class="answer-text">
+            Fixed points provide standard reference temperatures: Ice point
+            (0°C) and Steam point (100°C).
+          </div>
+        </div>
+
+        <div class="question-block">
+          <span class="question-text"
+            >72. How can a catalyst increase the rate of reaction?</span
+          >
+          <div class="answer-text">
+            A catalyst lowers activation energy, providing an easier path for
+            the reaction, increasing the rate.
+          </div>
+        </div>
+
+        <div class="question-block">
+          <span class="question-text"
+            >73. Describe structure and function of liquid-in-glass
+            thermometer.</span
+          >
+          <div class="answer-text">
+            Consists of a glass tube with a bulb containing mercury/alcohol.
+            Liquid expands/contracts to indicate temperature.
+          </div>
+        </div>
+
+        <div class="question-block">
+          <span class="question-text"
+            >74. Can we increase internal energy without increasing temperature?
+            Why is water not used in thermometers?</span
+          >
+          <div class="answer-text">
+            Yes, during phase change internal energy increases but temperature
+            stays constant. Water is not used due to irregular expansion and
+            sticking to glass.
+          </div>
+        </div>
+
+        <div class="question-block">
+          <span class="question-text"
+            >75. Describe forces between magnetic poles.</span
+          >
+          <div class="answer-text">
+            Like poles repel; unlike poles attract. Magnets attract magnetic
+            materials like iron.
+          </div>
+        </div>
+
+        <div class="question-block">
+          <span class="question-text">76. Describe induced magnetism.</span>
+          <div class="answer-text">
+            Occurs when a magnetic material becomes a magnet when placed in a
+            magnetic field. It is usually temporary.
+          </div>
+        </div>
+
+        <div class="question-block">
+          <span class="question-text"
+            >77. Draw pattern and direction of magnetic field lines around a bar
+            magnet.</span
+          >
+          <div class="answer-text">
+            Lines emerge from North and enter South outside. Inside, they go
+            from South to North.
+          </div>
+        </div>
+
+        <div class="question-block">
+          <span class="question-text"
+            >78. Difference between magnetic and non-magnetic materials.</span
+          >
+          <div class="answer-text">
+            Magnetic (iron, nickel) are attracted by magnets. Non-magnetic
+            (wood, plastic) are not.
+          </div>
+        </div>
+
+        <div class="question-block">
+          <span class="question-text"
+            >79. Differentiate between temporary, permanent, and
+            electromagnets.</span
+          >
+          <div class="answer-text">
+            Temporary magnets lose magnetism quickly. Permanent retain it.
+            Electromagnets require electric current.
+          </div>
+        </div>
+
+        <div class="question-block">
+          <span class="question-text"
+            >80. Factors affecting strength of electromagnet.</span
+          >
+          <div class="answer-text">
+            Number of turns of coil, amount of current, and type of core (soft
+            iron).
+          </div>
+        </div>
+
+        <div class="question-block">
+          <span class="question-text">81. What is neutral zone?</span>
+          <div class="answer-text">
+            A region where magnetic fields cancel each other, so the net
+            magnetic field is zero.
+          </div>
+        </div>
+
+        <div class="question-block">
+          <span class="question-text"
+            >82. Is there any material with no magnetic behavior?</span
+          >
+          <div class="answer-text">
+            No. All materials show some magnetic effect, but in many it is
+            extremely weak (diamagnetic).
+          </div>
+        </div>
+
+        <div class="question-block">
+          <span class="question-text">83. What is magnetic field?</span>
+          <div class="answer-text">
+            The region around a magnet where magnetic force is felt. Lines go
+            North to South.
+          </div>
+        </div>
+
+        <div class="question-block">
+          <span class="question-text"
+            >84. State that soft magnetic materials provide shielding.</span
+          >
+          <div class="answer-text">
+            Soft iron can redirect magnetic field lines, reducing the effect
+            inside a region (magnetic shielding).
+          </div>
+        </div>
+
+        <div class="question-block">
+          <span class="question-text"
+            >85. Analyze applications of magnets in recording technology.</span
+          >
+          <div class="answer-text">
+            Used in hard drives and tapes to store data by magnetizing small
+            regions.
+          </div>
+        </div>
+
+        <div class="question-block">
+          <span class="question-text"
+            >86. Describe the nature of Earth's magnetic field.</span
+          >
+          <div class="answer-text">
+            Earth acts like a giant magnet. It protects from cosmic radiation
+            and helps in navigation.
+          </div>
+        </div>
+
+        <div class="question-block">
+          <span class="question-text"
+            >87. Uses of permanent magnets and electromagnets in daily
+            life.</span
+          >
+          <div class="answer-text">
+            Permanent: speakers, compasses. Electromagnets: cranes, electric
+            bells, motors.
+          </div>
+        </div>
+
+        <div class="question-block">
+          <span class="question-text"
+            >88. State direction of magnetic field at a point.</span
+          >
+          <div class="answer-text">
+            The direction in which a North pole would move at that point.
+          </div>
+        </div>
+
+        <div class="question-block">
+          <span class="question-text"
+            >89. Define hypothesis, theory, and law.</span
+          >
+          <div class="answer-text">
+            <strong>Hypothesis:</strong> testable idea.
+            <strong>Theory:</strong> well-tested explanation.
+            <strong>Law:</strong> proven statement of fact.
+          </div>
+        </div>
+
+        <div class="question-block">
+          <span class="question-text"
+            >90. Differentiate science, technology, and engineering.</span
+          >
+          <div class="answer-text">
+            <strong>Science:</strong> study of nature.
+            <strong>Technology:</strong> application of science.
+            <strong>Engineering:</strong> designing and building solutions.
+          </div>
+        </div>
+
+        <div class="question-block">
+          <span class="question-text"
+            >91. Which part of study is not handled by classical physics?</span
+          >
+          <div class="answer-text">
+            Modern physics (atomic, nuclear, quantum phenomena) is not handled
+            by classical physics.
+          </div>
+        </div>
+      </div>
+
+      <!-- long Questions -->
+
+      <div class="header" id="long-questions">
+        <h1>Physics Long Questions & Answers</h1>
+        <p>Comprehensive Revision Guide</p>
+      </div>
+
+      <div>
+        <div class="long-question-block">
+          <span class="question-text"
+            >92. What is Error? Explain its types. Also identifying sources of
+            systematic and random error in measurements and suggesting steps to
+            correct them. <span class="marks-badge">5 Marks</span></span
+          >
+          <div class="answer-text">
+            An error is the difference between the measured value and the actual
+            (true) value of a physical quantity. It is not necessarily a
+            "mistake" but an uncertainty in measurement.<br /><br />
+            <strong>Random Error:</strong> Occurs when repeated measurements of
+            the same quantity give different values under the same
+            conditions.<br />
+            Sources: Fluctuations in environment (temperature, voltage) or
+            slight variations in the observer's technique.<br />
+            Correction: Take multiple readings and calculate the mean (average)
+            value to minimize the effect.<br /><br />
+            <strong>Systematic Error:</strong> Occurs when measurements are
+            consistently shifted in one direction (always too high or always too
+            low).<br />
+            Sources: Zero error in instruments (e.g., a weighing scale not at
+            zero), poorly calibrated equipment, or faulty experimental setup.<br />
+            Correction: Apply a zero correction (mathematical adjustment) or
+            recalibrate the instrument against a standard.
+          </div>
+        </div>
+
+        <div class="long-question-block">
+          <span class="question-text"
+            >93. Sketch, plot and interpret distance-time and Speed-time graphs
+            when an object is: (a) at rest, (b) Moving with constant speed (c)
+            moving with constant acceleration (d) moving with changing
+            acceleration. <span class="marks-badge">5 Marks</span></span
+          >
+          <div class="answer-text">
+            <table>
+              <tr>
+                <th>Motion Type</th>
+                <th>Distance-Time Graph (s-t)</th>
+                <th>Speed-Time Graph (v-t)</th>
+              </tr>
+              <tr>
+                <td>(a) At Rest</td>
+                <td>Horizontal straight line (y = constant)</td>
+                <td>Horizontal line on the x-axis (v = 0)</td>
+              </tr>
+              <tr>
+                <td>(b) Constant Speed</td>
+                <td>Straight line sloping upwards from origin</td>
+                <td>Horizontal line above the x-axis (y = constant)</td>
+              </tr>
+              <tr>
+                <td>(c) Constant Acceleration</td>
+                <td>Curve sloping upwards (Parabola)</td>
+                <td>Straight line sloping upwards from origin</td>
+              </tr>
+              <tr>
+                <td>(d) Changing Accel.</td>
+                <td>Irregular curve with changing steepness</td>
+                <td>Curved line (not straight)</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+
+        <div class="long-question-block">
+          <span class="question-text"
+            >94. Analyze the Distance travelled in speed vs time graphs [by
+            determining the area under the graph for cases of motion with
+            constant speed or constant acceleration].
+            <span class="marks-badge">5 Marks</span></span
+          >
+          <div class="answer-text">
+            In a speed-time (v-t) graph, the area under the line numerically
+            represents the total distance traveled by the object.<br /><br />
+            <strong>Constant Speed:</strong> The area formed is a rectangle.<br />
+            <span class="equation"
+              >Distance = Area of Rectangle = Speed × Time</span
+            ><br /><br />
+            <strong>Constant Acceleration (from rest):</strong> The area formed
+            is a triangle.<br />
+            <span class="equation"
+              >Distance = Area of Triangle = ½ × base × height = ½ × t × v</span
+            ><br /><br />
+            <strong>General Case (Trapezium):</strong> For an object with
+            initial velocity u and final velocity v:<br />
+            <span class="equation">Distance = ½(u + v) × t</span>
+          </div>
+        </div>
+
+        <div class="long-question-block">
+          <span class="question-text"
+            >95. Justify how the gradient of the speed vs time graph gives the
+            acceleration. <span class="marks-badge">5 Marks</span></span
+          >
+          <div class="answer-text">
+            Acceleration is defined as the rate of change of velocity per unit
+            time (a = Δv/Δt).<br /><br />
+            On a speed-time graph:<br />
+            • The Vertical change (y-axis) represents the change in velocity
+            (Δv).<br />
+            • The Horizontal change (x-axis) represents the change in time
+            (Δt).<br />
+            • The Gradient (Slope) of a line is defined as Rise/Run.<br /><br />
+            Substituting the physical quantities:<br />
+            <span class="equation"
+              >Gradient = Change in Speed / Time Interval = Δv/Δt</span
+            ><br /><br />
+            Since Δv/Δt = a, the gradient of a speed-time graph is equal to the
+            acceleration.
+          </div>
+        </div>
+
+        <div class="long-question-block">
+          <span class="question-text"
+            >96. Write a Complete note on Gravitational Field strength.
+            <span class="marks-badge">5 Marks</span></span
+          >
+          <div class="answer-text">
+            Gravitational Field Strength (g) is the gravitational force acting
+            per unit mass at a specific point in space.<br /><br />
+            <strong>Formula:</strong> <span class="equation">g = W/m</span>,
+            where W is the weight (force) and m is the mass.<br />
+            <strong>Unit:</strong> Newtons per kilogram (N/kg) or meters per
+            second squared (m/s²).<br />
+            <strong>On Earth:</strong> Near the surface, the value is
+            approximately 9.8 N/kg.<br />
+            <strong>Nature:</strong> It is a vector quantity directed toward the
+            center of the planet or mass.<br />
+            <strong>Variation:</strong> It decreases as the distance from the
+            center of the planet increases. It is also weaker on the Moon
+            (approx. 1.6 N/kg) compared to Earth because the Moon has less mass.
+          </div>
+        </div>
+
+        <div class="long-question-block">
+          <span class="question-text"
+            >97. What is equilibrium? Explain its types also state its
+            conditions. (examples/mathematical relation).
+            <span class="marks-badge">5 Marks</span></span
+          >
+          <div class="answer-text">
+            A body is in equilibrium if it is at rest or moving with uniform
+            velocity (resultant force and torque are zero).<br /><br />
+            <strong>Conditions:</strong><br />
+            First Condition: ΣF = 0 (The sum of all forces is zero).<br />
+            Second Condition: Στ = 0 (The sum of all torques/moments is
+            zero).<br /><br />
+            <strong>Types:</strong><br />
+            • <strong>Stable:</strong> Returns to its original position after a
+            slight tilt (e.g., a book flat on a table).<br />
+            • <strong>Unstable:</strong> Moves further away from its original
+            position when tilted (e.g., a pencil standing on its tip).<br />
+            • <strong>Neutral:</strong> Stays in its new position when moved
+            (e.g., a ball rolling on a flat floor).
+          </div>
+        </div>
+
+        <div class="long-question-block">
+          <span class="question-text"
+            >98. What is terminal velocity? On what factors does the drag force
+            acting on a falling body depends? Explain.
+            <span class="marks-badge">5 Marks</span></span
+          >
+          <div class="answer-text">
+            Terminal velocity is the constant maximum velocity reached by a
+            falling object when the downward force of gravity is exactly
+            balanced by the upward drag force (Fnet = 0).<br /><br />
+            <strong>Factors affecting Drag Force:</strong><br />
+            • <strong>Speed:</strong> As the speed of the object increases, the
+            drag force increases.<br />
+            • <strong>Surface Area:</strong> Objects with a larger surface area
+            (like an open parachute) experience more drag.<br />
+            • <strong>Shape:</strong> Aerodynamic or streamlined shapes reduce
+            drag.<br />
+            • <strong>Fluid Density:</strong> Drag is higher in denser fluids
+            (e.g., water vs. air).
+          </div>
+        </div>
+
+        <div class="long-question-block">
+          <span class="question-text"
+            >99. What is centripetal force? And also identify the sources of
+            centripetal force in real life examples.
+            <span class="marks-badge">5 Marks</span></span
+          >
+          <div class="answer-text">
+            Centripetal force is the force that acts on a body moving in a
+            circular path and is directed toward the center around which the
+            body is moving.<br /><br />
+            <strong>Real-Life Examples and Sources:</strong><br />
+            • <strong>Stone on a String:</strong> The source is the Tension in
+            the string.<br />
+            • <strong>Moon orbiting Earth:</strong> The source is the
+            Gravitational Force from the Earth.<br />
+            • <strong>Car turning a corner:</strong> The source is the Friction
+            between the tires and the road.<br />
+            • <strong>Electron orbiting Nucleus:</strong> The source is the
+            Electrostatic Force.
+          </div>
+        </div>
+
+        <div class="long-question-block">
+          <span class="question-text"
+            >100. Define and apply Pascal's law.
+            <span class="marks-badge">5 Marks</span></span
+          >
+          <div class="answer-text">
+            Pascal's Law states that pressure applied to an enclosed fluid is
+            transmitted undiminished to every portion of the fluid and to the
+            walls of the container.<br /><br />
+            <strong>Applications:</strong><br />
+            • <strong>Hydraulic Press:</strong> A small force on a small piston
+            creates a massive force on a large piston to crush objects or lift
+            heavy weights.<br />
+            • <strong>Hydraulic Brakes:</strong> When a driver presses the brake
+            pedal, the pressure is transmitted through the brake fluid to all
+            wheels simultaneously to stop the vehicle.
+          </div>
+        </div>
+
+        <div class="long-question-block">
+          <span class="question-text"
+            >101. How are hydraulic lifts capable of lifting heavy loads. Derive
+            a mathematical formula.
+            <span class="marks-badge">5 Marks</span></span
+          >
+          <div class="answer-text">
+            Hydraulic lifts use the principle that pressure is constant
+            throughout an enclosed liquid (P₁ = P₂). By applying a small force
+            over a small area, a much larger force is generated over a larger
+            area.<br /><br />
+            <strong>Derivation:</strong><br />
+            Let F₁ be the force on the small piston of area A₁, and F₂ be the
+            force on the large piston of area A₂.<br />
+            According to Pascal's Law:<br />
+            <span class="equation">P₁ = P₂</span><br />
+            <span class="equation">F₁/A₁ = F₂/A₂</span><br />
+            Rearranging for F₂:<br />
+            <span class="equation">F₂ = F₁ × (A₂/A₁)</span><br />
+            Since A₂ > A₁, the output force F₂ is multiplied, allowing the lift
+            to move heavy loads.
+          </div>
+        </div>
+
+        <div class="long-question-block">
+          <span class="question-text"
+            >102. Prove that Kinetic Energy Eₖ = ½mv² [proof through kinematic
+            graphs]. <span class="marks-badge">5 Marks</span></span
+          >
+          <div class="answer-text">
+            Consider an object of mass m at rest (u=0) accelerated to a velocity
+            v by a force F over a distance s.<br /><br />
+            <strong>Work Done (W):</strong> Work done equals the Kinetic Energy
+            gained.<br />
+            <span class="equation">Eₖ = W = F × s</span><br /><br />
+            From Newton's Second Law: F = ma.<br /><br />
+            <strong>From a Speed-Time Graph:</strong><br />
+            The distance s is the area under the triangle: s = ½ × base × height
+            = ½ × t × v.<br />
+            The acceleration a is the gradient: a = v/t.<br /><br />
+            <strong>Substitution:</strong><br />
+            <span class="equation">Eₖ = (ma) × s</span><br />
+            <span class="equation">Eₖ = m × (v/t) × (½vt)</span><br />
+            The t values cancel out:<br />
+            <span class="equation">Eₖ = ½ m × v × v = ½mv²</span><br /><br />
+            <strong>Hence Proved.</strong>
+          </div>
+        </div>
+
+        <div class="long-question-block">
+          <span class="question-text"
+            >103. Prove and use the formula for Gravitational potential energy.
+            <span class="marks-badge">5 Marks</span></span
+          >
+          <div class="answer-text">
+            Gravitational Potential Energy (GPE) is the energy possessed by a
+            body due to its position in a gravitational field.<br /><br />
+            <strong>Derivation:</strong><br />
+            Consider an object of mass m being lifted vertically through a
+            height h at a constant speed.<br />
+            To lift the object, a force F equal to its weight (W) must be
+            applied: F = mg.<br />
+            Work done (W) in lifting the object is given by: W = Force ×
+            Displacement.<br />
+            Substituting the values: W = (mg) × h.<br />
+            Since the work done is stored as potential energy:<br />
+            <span class="equation">GPE = mgh</span><br /><br />
+            <strong>Use:</strong> This formula is used to calculate energy in
+            hydropower dams, falling objects, and roller coasters. For example,
+            a 2 kg book on a 1.5 m shelf has GPE = 2 × 9.8 × 1.5 = 29.4 Joules.
+          </div>
+        </div>
+
+        <div class="long-question-block">
+          <span class="question-text"
+            >104. Show that liquid in a container exerts pressure equal to P =
+            ρgh. What is the effect of depth on pressure of liquid.
+            <span class="marks-badge">5 Marks</span></span
+          >
+          <div class="answer-text">
+            <strong>Derivation:</strong><br />
+            Consider a cylinder of liquid with cross-sectional area A, height h,
+            and density ρ.<br />
+            The volume of liquid is V = A × h.<br />
+            The mass of liquid is m = density × volume = ρ × A × h.<br />
+            The weight (F) of the liquid column is W = mg = ρAhg.<br />
+            Pressure (P) is defined as force per unit area: P = F/A.<br />
+            Substituting the force: P = ρAhg/A.<br />
+            <span class="equation">P = ρgh</span><br /><br />
+            <strong>Effect of Depth:</strong><br />
+            Liquid pressure is directly proportional to depth (P ∝ h). As depth
+            increases, the weight of the liquid column above increases, thus
+            increasing the pressure. This is why dam walls are thicker at the
+            bottom.
+          </div>
+        </div>
+
+        <div class="long-question-block">
+          <span class="question-text"
+            >105. Justify and illustrate how to determine the density of a
+            substance [Including liquid, regular solid, and irregular solid].
+            <span class="marks-badge">5 Marks</span></span
+          >
+          <div class="answer-text">
+            Density is mass per unit volume (ρ = m/V).<br /><br />
+            <strong>Regular Solid:</strong> Measure mass using a balance.
+            Measure dimensions (length, width, height) with a ruler/vernier
+            caliper. V = l × w × h. Calculate ρ = m/V.<br /><br />
+            <strong>Liquid:</strong> Measure the mass of an empty graduated
+            cylinder (m₁). Add liquid and measure new mass (m₂). Mass of liquid
+            m = m₂ - m₁. Note the volume (V) directly from the cylinder.
+            Calculate ρ = m/V.<br /><br />
+            <strong>Irregular Solid (Displacement Method):</strong><br />
+            • Measure the mass (m) of the solid using a balance.<br />
+            • Fill a displacement (Eureka) can with water up to the spout.<br />
+            • Submerge the solid; the displaced water is collected in a
+            measuring cylinder.<br />
+            • The volume of displaced water = Volume of the solid (V).<br />
+            • Calculate ρ = m/V.
+          </div>
+        </div>
+
+        <div class="long-question-block">
+          <span class="question-text"
+            >106. Describe, qualitatively, the particle structure of solids,
+            liquids and gases. <span class="marks-badge">5 Marks</span></span
+          >
+          <div class="answer-text">
+            The properties of matter depend on the arrangement and motion of
+            their particles:<br /><br />
+            <strong>Solids:</strong> Particles are closely packed in a fixed,
+            regular lattice. Strong intermolecular forces hold them together.
+            They only vibrate about fixed positions. Solids have a fixed shape
+            and volume.<br /><br />
+            <strong>Liquids:</strong> Particles are close together but in a
+            random arrangement. Forces are strong enough to keep volume fixed
+            but weak enough to allow particles to slide over each other. They
+            take the shape of the container.<br /><br />
+            <strong>Gases:</strong> Particles are very far apart with negligible
+            forces between them. They move randomly at high speeds in all
+            directions. Gases have no fixed shape or volume and are highly
+            compressible.
+          </div>
+        </div>
+
+        <div class="long-question-block">
+          <span class="question-text"
+            >107. Describe the relationship between the motion of particles and
+            temperature [Including absolute zero].
+            <span class="marks-badge">5 Marks</span></span
+          >
+          <div class="answer-text">
+            Temperature is a measure of the average kinetic energy (KE) of the
+            particles in a substance.<br /><br />
+            <strong>Direct Relation:</strong> As temperature increases,
+            particles move faster (higher KE). In gases, this results in higher
+            pressure; in solids, more vigorous vibrations.<br /><br />
+            <strong>Absolute Zero:</strong> The lowest possible temperature is
+            -273.15°C (or 0 K). At this point, particle motion reaches its
+            theoretical minimum (least possible KE).<br /><br />
+            <strong>Kelvin Scale:</strong> The Kelvin scale starts at absolute
+            zero, meaning T (K) = Temp (°C) + 273.
+          </div>
+        </div>
+
+        <div class="long-question-block">
+          <span class="question-text"
+            >108. Explain, with examples, how a physical property which varies
+            with temperature may be used for the measurement of temperature.
+            <span class="marks-badge">5 Marks</span></span
+          >
+          <div class="answer-text">
+            Any physical property that changes continuously and linearly with
+            temperature is called a thermometric property.<br /><br />
+            <strong>Examples:</strong><br />
+            • <strong>Expansion of Liquid:</strong> In mercury/alcohol
+            thermometers, the volume of the liquid increases with
+            temperature.<br />
+            • <strong>Electrical Resistance:</strong> In resistance thermometers
+            (RTDs), the electrical resistance of a metal wire increases as it
+            gets hotter.<br />
+            • <strong>Voltage (EMF):</strong> In thermocouples, a temperature
+            difference between two junctions of different metals produces a
+            measurable voltage.<br />
+            • <strong>Pressure of Gas:</strong> In constant-volume gas
+            thermometers, the pressure of a fixed mass of gas increases with
+            temperature.
+          </div>
+        </div>
+
+        <div class="long-question-block">
+          <span class="question-text"
+            >109. Describe the construction and working of different types of
+            gas thermometers. <span class="marks-badge">5 Marks</span></span
+          >
+          <div class="answer-text">
+            Gas thermometers are highly accurate and used as standards for
+            calibrating other thermometers.<br /><br />
+            <strong>Constant Volume Gas Thermometer:</strong> A bulb filled with
+            gas is connected to a manometer. As temperature changes, gas
+            pressure changes. The mercury level is adjusted to keep the gas
+            volume constant. Temperature is calculated using P ∝ T.<br /><br />
+            <strong>Constant Pressure Gas Thermometer:</strong> The pressure is
+            kept constant while the volume of the gas expands or contracts with
+            temperature changes. V ∝ T (Charles's Law).<br /><br />
+            <strong>Working:</strong> They utilize the ideal gas laws. Because
+            gases expand significantly and uniformly, these thermometers are
+            sensitive to very small temperature changes.
+          </div>
+        </div>
+
+        <div class="long-question-block">
+          <span class="question-text"
+            >110. Analyze how structure of liquid in glass thermometer can be
+            modified to improve its performance.
+            <span class="marks-badge">5 Marks</span></span
+          >
+          <div class="answer-text">
+            <strong>Sensitivity:</strong> Use a thinner capillary tube (narrower
+            bore) and a larger bulb. A small expansion will result in a larger
+            movement of the liquid thread.<br /><br />
+            <strong>Responsiveness (Quickness):</strong> Use a bulb with a thin
+            glass wall and a liquid that is a good conductor (like mercury) to
+            allow heat to reach the liquid faster.<br /><br />
+            <strong>Range:</strong> Use a longer stem or a thermometric liquid
+            with a very high boiling point and very low freezing point (like
+            alcohol for cold climates).<br /><br />
+            <strong>Linearity:</strong> Ensure the bore of the capillary is
+            uniform throughout its length.
+          </div>
+        </div>
+
+        <div class="long-question-block">
+          <span class="question-text"
+            >111. Explain any two states of matter. Giving complete information
+            about their particle structures with diagrams?
+            <span class="marks-badge">5 Marks</span></span
+          >
+          <div class="answer-text">
+            <strong>(Choosing Solid and Gas for contrast)</strong><br /><br />
+            <strong>Solid State:</strong><br />
+            Structure: Particles are arranged in a tight, 3D regular pattern
+            called a lattice.<br />
+            Forces: Very strong attractive forces.<br />
+            Motion: Only vibration around fixed points; no translational
+            motion.<br /><br />
+            <strong>Gaseous State:</strong><br />
+            Structure: Particles are very far apart (large empty spaces).<br />
+            Forces: Almost zero intermolecular forces.<br />
+            Motion: High-speed, random motion in all directions, colliding with
+            each other and container walls.
+          </div>
+        </div>
+
+        <div class="long-question-block">
+          <span class="question-text"
+            >112. Write working of thermocouple thermometers.
+            <span class="marks-badge">5 Marks</span></span
+          >
+          <div class="answer-text">
+            A thermocouple consists of two wires of different metals (e.g.,
+            copper and iron) joined at two junctions.<br /><br />
+            <strong>Principle:</strong> It works on the Seebeck Effect.<br /><br />
+            <strong>Working:</strong> One junction (reference) is kept at a
+            constant cold temperature (like ice), while the other (probe) is
+            placed in the substance to be measured.<br /><br />
+            <strong>Voltage Generation:</strong> The temperature difference
+            between the junctions creates an electromotive force (EMF) or
+            voltage.<br /><br />
+            <strong>Measurement:</strong> This voltage is measured by a
+            millivoltmeter. Since voltage is proportional to the temperature
+            difference, the temperature can be determined.<br /><br />
+            <strong>Advantage:</strong> It can measure very high temperatures
+            and rapid changes because of its low heat capacity.
+          </div>
+        </div>
+
+        <div class="long-question-block">
+          <span class="question-text"
+            >113. What is meant by the sensitivity, range and linearity of
+            thermometers? Explain each in detail.
+            <span class="marks-badge">5 Marks</span></span
+          >
+          <div class="answer-text">
+            <strong>Sensitivity:</strong> The change in the thermometric
+            property per unit change in temperature. A sensitive thermometer
+            shows a large change in reading for a very small change in
+            temperature.<br /><br />
+            <strong>Range:</strong> The interval between the minimum and maximum
+            temperatures a thermometer can measure (e.g., a clinical thermometer
+            has a range of 35°C to 42°C).<br /><br />
+            <strong>Linearity:</strong> A thermometer is linear if the
+            thermometric property changes at a constant rate with temperature.
+            On a graph of property vs. temperature, it should be a straight
+            line. This allows for an evenly spaced scale.
+          </div>
+        </div>
+
+        <div class="long-question-block">
+          <span class="question-text"
+            >114. Explain qualitatively in terms of the domain theory of
+            magnetism how materials can be magnetized and demagnetized.
+            <span class="marks-badge">5 Marks</span></span
+          >
+          <div class="answer-text">
+            <strong>Domain Theory:</strong> Magnetic materials contain small
+            regions called "domains" that act like tiny magnets. In unmagnetized
+            iron, these domains point in random directions, canceling each other
+            out.<br /><br />
+            <strong>Magnetization:</strong><br />
+            • <strong>Stroking:</strong> Moving a magnet along a bar aligns the
+            domains in one direction.<br />
+            • <strong>Solenoid:</strong> Placing the material inside a coil with
+            DC current uses the magnetic field to snap domains into
+            alignment.<br /><br />
+            <strong>Demagnetization:</strong><br />
+            • <strong>Heating/Hammering:</strong> Provides energy to the
+            particles, causing them to vibrate violently and fall back into
+            random alignment.<br />
+            • <strong>AC Solenoid:</strong> Using a solenoid with alternating
+            current and slowly withdrawing the material randomizes the domains.
+          </div>
+        </div>
+
+        <div class="long-question-block">
+          <span class="question-text"
+            >115. Differentiate between ferromagnetic, paramagnetic and
+            diamagnetic materials.
+            <span class="marks-badge">5 Marks</span></span
+          >
+          <div class="answer-text">
+            <strong>Ferromagnetic:</strong> Have strongly aligned domains. They
+            are strongly attracted by magnets and can be permanently magnetized
+            (e.g., Iron, Nickel, Cobalt).<br /><br />
+            <strong>Paramagnetic:</strong> Have atoms with randomly oriented
+            magnetic moments. They are weakly attracted by external fields and
+            lose magnetism when the field is removed (e.g., Aluminum,
+            Oxygen).<br /><br />
+            <strong>Diamagnetic:</strong> These materials create an induced
+            magnetic field in the opposite direction to an external field. They
+            are weakly repelled by magnets (e.g., Copper, Bismuth, Water).
+          </div>
+        </div>
+
+        <div class="long-question-block">
+          <span class="question-text"
+            >116. Describe the nature of the Earth's magnetic field.
+            <span class="marks-badge">5 Marks</span></span
+          >
+          <div class="answer-text">
+            The Earth acts as if it has a giant bar magnet at its center.<br /><br />
+            <strong>Orientation:</strong> The Earth's magnetic North pole is
+            near the geographic South pole. This is why the North pole of a
+            compass needle points toward geographic North.<br /><br />
+            <strong>Protection:</strong> The magnetic field (magnetosphere)
+            deflects harmful cosmic radiation and solar winds, preventing them
+            from stripping away our atmosphere.<br /><br />
+            <strong>Navigation:</strong> Many migratory animals (birds, sea
+            turtles) have internal biological compasses (biomagnetism) that
+            allow them to sense the Earth's field lines to navigate thousands of
+            miles.
+          </div>
+        </div>
+
+        <div class="long-question-block">
+          <span class="question-text"
+            >117. Explain with examples that physics has many sub-fields, and
+            involves interdisciplinary fields.
+            <span class="marks-badge">5 Marks</span></span
+          >
+          <div class="answer-text">
+            Physics is the fundamental science that studies matter and energy.
+            Because it explains the "rules" of the universe, it overlaps with
+            many other fields (Interdisciplinary).<br /><br />
+            <strong>Examples:</strong><br />
+            • <strong>Biophysics:</strong> Applying physics to biological
+            systems (e.g., DNA structure).<br />
+            • <strong>Geophysics:</strong> Physics of the Earth (e.g.,
+            earthquakes).<br />
+            • <strong>Astrophysics:</strong> Physics of celestial bodies.<br /><br />
+            <strong>Fields of Physics:</strong><br />
+            Physics is an incredibly broad science that seeks to understand the
+            fundamental laws of the universe. Here are ten of its key fields:<br /><br />
+            <strong>Mechanics:</strong> The study of the motion of physical
+            objects and the forces that cause that motion.<br />
+            <strong>Thermodynamics:</strong> The branch that deals with heat,
+            temperature, and their relation to energy and work.<br />
+            <strong>Electromagnetism:</strong> The study of electric and
+            magnetic fields and the interactions between charged particles.<br />
+            <strong>Optics:</strong> The field focused on the behavior and
+            properties of light, including its interactions with matter.<br />
+            <strong>Nuclear Physics:</strong> The study of the constituents and
+            interactions of atomic nuclei.<br />
+            <strong>Atomic Physics:</strong> The field that examines the
+            structure of the atom and the arrangement of electrons around the
+            nucleus.<br />
+            <strong>Quantum Mechanics:</strong> The branch of physics dealing
+            with physical phenomena at microscopic scales, where the action is
+            on the order of the Planck constant.<br />
+            <strong>Acoustics:</strong> The interdisciplinary science that deals
+            with the study of mechanical waves in gases, liquids, and solids,
+            including vibration, sound, ultrasound, and infrasound.<br />
+            <strong>Relativity:</strong> The study of the relationship between
+            space, time, and gravity, primarily based on Albert Einstein's
+            theories.<br />
+            <strong>Particle Physics:</strong> The branch that studies the
+            nature of the particles that constitute matter and radiation.
+          </div>
+        </div>
+      </div>
+      <!-- Numerical Questions -->
+
+      <div class="header" id="numerical-questions">
+        <h1>Physics Numerical Questions Solutions</h1>
+        <p>Comprehensive Revision Guide</p>
+      </div>
+
+      <div>
+        <div class="long-question-block">
+          <span class="question-text"
+            >Q.1 (a) Show 6000 nano-grams in micro grams</span
+          >
+          <div class="answer-text">
+            <strong>Given:</strong><br />
+            Mass = 6000 ng<br /><br />
+            <strong>Required:</strong><br />
+            Value in micrograms (μg)<br /><br />
+            <strong>Solution:</strong><br />
+            We know:<br />
+            1 ng = 10⁻⁹ g<br />
+            1 μg = 10⁻⁶ g<br />
+            Therefore,<br />
+            1 μg = 10⁻⁶/10⁻⁹ = 10³ ng = 1000 ng<br />
+            So,<br />
+            6000 ng = 6000/1000 = 6 μg<br /><br />
+            <strong>Explanation:</strong><br />
+            Nano (n) is 10⁻⁹ and micro (μ) is 10⁻⁶, so micro is 1000 times
+            larger than nano. Dividing the given value by 1000 converts
+            nano-grams directly into micrograms. This is a unit conversion using
+            the standard metric prefix relationship.<br /><br />
+            <strong>(b) Show 6000 nano grams in milli grams.</strong><br />
+            <strong>Given:</strong><br />
+            Mass = 6000 ng<br /><br />
+            <strong>Required:</strong><br />
+            Value in milligrams (mg)<br /><br />
+            <strong>Solution:</strong><br />
+            We know:<br />
+            1 mg = 10⁻³ g<br />
+            1 ng = 10⁻⁹ g<br />
+            Therefore,<br />
+            1 mg = 10⁻³/10⁻⁹ = 10⁶ ng = 1,000,000 ng<br />
+            So,<br />
+            6000 ng = 6000/1,000,000 = 0.006 mg<br /><br />
+            <strong>Explanation:</strong><br />
+            Milli (m) is 10⁻³ while nano is 10⁻⁹, so milli is a million times
+            larger than nano. Dividing by 10⁶ gives the value in milligrams.
+            This conversion shows how much smaller nano is compared to milli.
+          </div>
+        </div>
+
+        <div class="long-question-block">
+          <span class="question-text"
+            >Q.2 Express the following quantities using prefixes: (a) 3000 g (b)
+            572 × 10⁻⁸ s</span
+          >
+          <div class="answer-text">
+            <strong>Given:</strong><br />
+            (a) 3000 g<br />
+            (b) 572 × 10⁻⁸ s<br /><br />
+            <strong>Required:</strong><br />
+            Express each using appropriate metric prefixes.<br /><br />
+            <strong>Solution:</strong><br />
+            (a)<br />
+            3000 g = 3 × 10³ g = 3 kg<br /><br />
+            (b)<br />
+            572 × 10⁻⁸ s = 5.72 × 10² × 10⁻⁸ s = 5.72 × 10⁻⁶ s = 5.72 μs<br /><br />
+            <strong>Explanation:</strong><br />
+            Kilo (k) = 10³, so 3000 g is simply 3 kg. For (b), first rewrite the
+            scientific notation to standard form, then apply micro (μ) = 10⁻⁶.
+            This makes the numbers easier to read and follows the rule of using
+            prefixes for values between 1 and 1000 where possible.
+          </div>
+        </div>
+
+        <div class="long-question-block">
+          <span class="question-text"
+            >Q.3 Express the following using prefixes: i. 29.3 × 10⁻³ m ii.
+            0.00034 × 10⁻² s</span
+          >
+          <div class="answer-text">
+            <strong>Given:</strong><br />
+            i. 29.3 × 10⁻³ m<br />
+            ii. 0.00034 × 10⁻² s<br /><br />
+            <strong>Required:</strong><br />
+            Express using suitable metric prefixes.<br /><br />
+            <strong>Solution:</strong><br />
+            i.<br />
+            29.3 × 10⁻³ m = 29.3 mm<br />
+            (milli (m) = 10⁻³)<br /><br />
+            ii.<br />
+            0.00034 × 10⁻² = 3.4 × 10⁻⁴ × 10⁻² = 3.4 × 10⁻⁶ s = 3.4 μs<br />
+            (micro (μ) = 10⁻⁶)<br /><br />
+            <strong>Explanation:</strong><br />
+            For (i), the given value is already in the milli range, so it
+            becomes 29.3 mm. For (ii), convert the decimal to scientific
+            notation first, then identify that 10⁻⁶ corresponds to micro.
+            Prefixes simplify very small or large numbers without changing the
+            physical quantity.
+          </div>
+        </div>
+
+        <div class="long-question-block">
+          <span class="question-text"
+            >Q.4 How many kilometers are there in 25 micrometers?</span
+          >
+          <div class="answer-text">
+            <strong>Given:</strong><br />
+            Length = 25 μm<br /><br />
+            <strong>Required:</strong><br />
+            Value in kilometers (km).<br /><br />
+            <strong>Solution:</strong><br />
+            We know:<br />
+            1 μm = 10⁻⁶ m<br />
+            1 km = 10³ m<br />
+            So,<br />
+            25 μm = 25 × 10⁻⁶ m = 25 × 10⁻⁶ × 10⁻³ km = 25 × 10⁻⁹ km = 2.5 ×
+            10⁻⁸ km<br /><br />
+            <strong>Explanation:</strong><br />
+            Convert micrometers to meters first (×10⁻⁶), then meters to
+            kilometers (÷10³ or ×10⁻³). The result is a very small number, which
+            is expected because micrometers are tiny compared to kilometers.
+            This demonstrates the wide range of the metric system.
+          </div>
+        </div>
+
+        <div class="long-question-block">
+          <span class="question-text"
+            >Q.5 Show that prefix micro is thousand times smaller than prefix
+            milli.</span
+          >
+          <div class="answer-text">
+            <strong>Given:</strong><br />
+            Prefix micro (μ) and milli (m).<br /><br />
+            <strong>Required:</strong><br />
+            Prove micro is 1000 times smaller than milli.<br /><br />
+            <strong>Solution:</strong><br />
+            1 milli = 10⁻³<br />
+            1 micro = 10⁻⁶<br />
+            Ratio:<br />
+            1 micro / 1 milli = 10⁻⁶ / 10⁻³ = 10⁻³ = 1/1000<br />
+            Hence, micro is 1000 times smaller than milli.<br /><br />
+            <strong>Explanation:</strong><br />
+            The exponent difference is 3 (-6 - (-3) = -3), which equals 10⁻³ or
+            1/1000. This relationship is fundamental to the metric system and is
+            used in all unit conversions involving these prefixes.
+          </div>
+        </div>
+
+        <div class="long-question-block">
+          <span class="question-text"
+            >Q.6 A train travelled a distance of 30 kilometers in 7 minutes and
+            30 seconds. What is its speed? Convert the speed into km/h.</span
+          >
+          <div class="answer-text">
+            <strong>Given:</strong><br />
+            Distance = 30 km<br />
+            Time = 7 min 30 s = 7.5 min = 450 s<br /><br />
+            <strong>Required:</strong><br />
+            Speed in m/s and then in km/h.<br /><br />
+            <strong>Solution:</strong><br />
+            Speed v = distance / time = 30 km / 7.5 min<br />
+            First convert time to hours: 7.5 min = 7.5/60 = 0.125 h<br />
+            v = 30 / 0.125 = 240 km/h<br />
+            (Alternatively in SI: 30 km = 30,000 m, 450 s → v = 30,000/450 =
+            66.67 m/s, then ×3.6 = 240 km/h)<br /><br />
+            <strong>Explanation:</strong><br />
+            Speed is total distance over total time. Converting minutes to hours
+            (÷60) gives the required km/h unit directly. The train is quite fast
+            (240 km/h), typical for high-speed rail calculations.
+          </div>
+        </div>
+
+        <div class="long-question-block">
+          <span class="question-text"
+            >Q.7 Which is more difficult to stop in 5 second and why? 1. A
+            2500kg car moving with v₁ =10 m s⁻¹ 2. A 5000 kg van moving with V₁
+            =4 m s⁻¹</span
+          >
+          <div class="answer-text">
+            <strong>Given:</strong><br />
+            Car: m₁ = 2500 kg, v₁ = 10 m/s<br />
+            Van: m₂ = 5000 kg, v₂ = 4 m/s<br />
+            Time to stop = 5 s (same for both)<br /><br />
+            <strong>Required:</strong><br />
+            Which has greater difficulty to stop and reason.<br /><br />
+            <strong>Solution:</strong><br />
+            Momentum (p) decides difficulty (larger Δp needs larger force for
+            same time).<br />
+            p_car = m₁v₁ = 2500 × 10 = 25,000 kg m/s<br />
+            p_van = m₂v₂ = 5000 × 4 = 20,000 kg m/s<br />
+            Since p_car > p_van, the car is more difficult to stop.<br />
+            (Reason: Impulse = F × t = Δp; same t → larger Δp needs larger
+            F.)<br /><br />
+            <strong>Explanation:</strong><br />
+            Newton's second law in momentum form shows that stopping depends on
+            change in momentum. The car has higher momentum despite lower mass
+            because of higher velocity. This is why heavier but slower objects
+            can sometimes be easier to stop.
+          </div>
+        </div>
+
+        <div class="long-question-block">
+          <span class="question-text"
+            >Q.8 Velocity v of a car increases uniformly from 15m/s to 25m/s.
+            Find its V_av and acceleration.</span
+          >
+          <div class="answer-text">
+            <strong>Given:</strong><br />
+            Initial velocity u = 15 m/s<br />
+            Final velocity v = 25 m/s<br />
+            Increases uniformly (constant acceleration)<br /><br />
+            <strong>Required:</strong><br />
+            Average velocity (V_av) and acceleration (a).<br /><br />
+            <strong>Solution:</strong><br />
+            Average velocity:<br />
+            V_av = (u + v)/2 = (15 + 25)/2 = 20 m/s<br /><br />
+            Acceleration:<br />
+            a = (v - u)/t<br />
+            Time t is not given, therefore numerical value of acceleration
+            cannot be calculated.<br /><br />
+            <strong>Explanation:</strong><br />
+            For uniform acceleration, average velocity is simply the arithmetic
+            mean of initial and final velocities. Acceleration requires time
+            interval or distance; without either, only V_av can be found. This
+            highlights the importance of complete data in kinematics problems.
+          </div>
+        </div>
+
+        <div class="long-question-block">
+          <span class="question-text"
+            >Q.9 What is average speed if it completes a circle of radius 200m
+            in 5 minutes?</span
+          >
+          <div class="answer-text">
+            <strong>Given:</strong><br />
+            Radius r = 200 m<br />
+            Time = 5 min = 300 s<br /><br />
+            <strong>Required:</strong><br />
+            Average speed.<br /><br />
+            <strong>Solution:</strong><br />
+            Distance travelled = circumference = 2πr = 2 × 3.14 × 200 = 1256 m
+            (approx.)<br />
+            Average speed = total distance / total time = 1256/300 ≈ 4.19 m/s<br /><br />
+            <strong>Explanation:</strong><br />
+            Even though direction changes continuously in circular motion,
+            average speed uses total path length (circumference) divided by
+            time. It is a scalar quantity, so direction is ignored. (Exact value
+            with π: 400π/300 = 4π/3 ≈ 4.19 m/s.)
+          </div>
+        </div>
+
+        <div class="long-question-block">
+          <span class="question-text"
+            >Q.10 An object weighs 300N on earth while 100N on an unknown
+            planet. Find the gravitational field of that planet.</span
+          >
+          <div class="answer-text">
+            <strong>Given:</strong><br />
+            Weight on Earth W_e = 300 N<br />
+            Weight on planet W_p = 100 N<br /><br />
+            <strong>Required:</strong><br />
+            Gravitational field strength g_p of the planet.<br /><br />
+            <strong>Solution:</strong><br />
+            Mass m is same:<br />
+            m = W_e/g_e (take g_e = 10 m/s²)<br />
+            m = 300/10 = 30 kg<br />
+            On planet:<br />
+            g_p = W_p/m = 100/30 = 3.33 m/s²<br /><br />
+            <strong>Explanation:</strong><br />
+            Weight W = mg, so mass is constant. g_p is 1/3 of Earth's because
+            weight is 1/3. Gravitational field strength is the acceleration due
+            to gravity at that location.
+          </div>
+        </div>
+
+        <div class="long-question-block">
+          <span class="question-text"
+            >Q.11 A riffle of mass 5kg fires a bullet of mass 20g forwards with
+            a velocity of 300ms⁻¹. What is the recoil velocity of the
+            riffle?</span
+          >
+          <div class="answer-text">
+            <strong>Given:</strong><br />
+            Mass of rifle M = 5 kg<br />
+            Mass of bullet m = 20 g = 0.02 kg<br />
+            Bullet velocity v_b = 300 m/s (forward)<br /><br />
+            <strong>Required:</strong><br />
+            Recoil velocity of rifle V_r.<br /><br />
+            <strong>Solution:</strong><br />
+            By law of conservation of momentum (initial momentum = 0):<br />
+            M V_r + m v_b = 0<br />
+            V_r = -m v_b / M = -(0.02 × 300)/5 = -1.2 m/s<br />
+            (Magnitude 1.2 m/s backward.)<br /><br />
+            <strong>Explanation:</strong><br />
+            No external force in the horizontal direction during firing, so
+            total momentum remains zero. The negative sign indicates opposite
+            direction (recoil).
+          </div>
+        </div>
+
+        <div class="long-question-block">
+          <span class="question-text"
+            >Q.12 Mercury completes one revolution around the sun in 88 days.
+            Find the orbital speed of Mercury around the sun if it is 57.9×10⁶
+            km away from the sun.</span
+          >
+          <div class="answer-text">
+            <strong>Given:</strong><br />
+            Orbital radius r = 57.9 × 10⁶ km = 5.79 × 10¹⁰ m<br />
+            Period T = 88 days = 88 × 86,400 = 7.6032 × 10⁶ s<br /><br />
+            <strong>Required:</strong><br />
+            Orbital speed v.<br /><br />
+            <strong>Solution:</strong><br />
+            v = 2πr/T = (2 × 3.14 × 5.79 × 10¹⁰) / (7.6032 × 10⁶) ≈ 4.78 × 10⁴
+            m/s = 47.8 km/s<br /><br />
+            <strong>Explanation:</strong><br />
+            Orbital speed is circumference divided by time period for circular
+            orbit approximation. The high speed is due to Mercury's closeness to
+            the Sun.
+          </div>
+        </div>
+
+        <div class="long-question-block">
+          <span class="question-text"
+            >Q.13 Earth complete 1 revolution around the sun in 365.25 days.
+            Find the orbital speed of earth around the sun if it is 150 million
+            km away from the sun.</span
+          >
+          <div class="answer-text">
+            <strong>Given:</strong><br />
+            Orbital radius r = 150 × 10⁶ km = 1.5 × 10¹¹ m<br />
+            Period T = 365.25 days ≈ 3.15576 × 10⁷ s<br /><br />
+            <strong>Required:</strong><br />
+            Orbital speed v.<br /><br />
+            <strong>Solution:</strong><br />
+            v = 2πr/T = (2 × 3.14 × 1.5 × 10¹¹) / (3.15576 × 10⁷) ≈ 2.98 × 10⁴
+            m/s = 29.8 km/s<br /><br />
+            <strong>Explanation:</strong><br />
+            Same formula as Q.12. Earth's orbital speed is slower than Mercury's
+            because it is farther from the Sun (larger circumference but much
+            longer period).
+          </div>
+        </div>
+
+        <div class="long-question-block">
+          <span class="question-text"
+            >Q.14 A long uniform steel bar of length of 100cm is balanced on a
+            wedge at its middle. Two weights W1 and W2 are suspended at distance
+            of 0.2m and 0.4m respectively from the wedge. If weight W1 is 70N
+            then find weight W2.</span
+          >
+          <div class="answer-text">
+            <strong>Given:</strong><br />
+            Bar length = 100 cm = 1 m, balanced at middle (fulcrum).<br />
+            W₁ = 70 N at 0.2 m from wedge<br />
+            W₂ at 0.4 m from wedge (opposite side)<br /><br />
+            <strong>Required:</strong><br />
+            W₂<br /><br />
+            <strong>Solution:</strong><br />
+            Principle of moments: clockwise torque = anticlockwise torque<br />
+            W₁ × 0.2 = W₂ × 0.4<br />
+            70 × 0.2 = W₂ × 0.4<br />
+            14 = 0.4 W₂<br />
+            W₂ = 35 N<br /><br />
+            <strong>Explanation:</strong><br />
+            The uniform bar's own weight acts at the centre, so its torque is
+            zero. Only the suspended weights produce torques about the fulcrum.
+            Equal torques keep the bar balanced.
+          </div>
+        </div>
+
+        <div class="long-question-block">
+          <span class="question-text"
+            >Q.15 If a satellite orbits Earth at an average radius of 18,000 km
+            and takes 9 hours to complete one orbit. What will be average
+            orbital speed?</span
+          >
+          <div class="answer-text">
+            <strong>Given:</strong><br />
+            Radius r = 18,000 km = 1.8 × 10⁷ m<br />
+            Time T = 9 h = 32,400 s<br /><br />
+            <strong>Required:</strong><br />
+            Average orbital speed v.<br /><br />
+            <strong>Solution:</strong><br />
+            v = 2πr/T = (2 × 3.14 × 1.8 × 10⁷) / 32,400 ≈ 3.48 × 10³ m/s = 3.48
+            km/s<br /><br />
+            <strong>Explanation:</strong><br />
+            Same circular orbit formula. The speed is lower than low-Earth-orbit
+            satellites because this radius is larger (geostationary-like but not
+            exactly).
+          </div>
+        </div>
+
+        <div class="long-question-block">
+          <span class="question-text"
+            >Q.16 A hydraulic press lifts mass of 500 kg when we apply force of
+            10N on small piston. Radius of its small piston is 15cm, find the
+            radius of its large piston.</span
+          >
+          <div class="answer-text">
+            <strong>Given:</strong><br />
+            Mass lifted = 500 kg → F₂ = 500 × 10 = 5000 N<br />
+            F₁ = 10 N<br />
+            r₁ = 15 cm = 0.15 m<br /><br />
+            <strong>Required:</strong><br />
+            Radius of large piston r₂.<br /><br />
+            <strong>Solution:</strong><br />
+            Pascal's law: F₁/A₁ = F₂/A₂<br />
+            A₂ = A₁ × (F₂/F₁)<br />
+            A₁ = π(0.15)² = 0.0707 m²<br />
+            A₂ = 0.0707 × (5000/10) = 35.35 m²<br />
+            r₂ = √(A₂/π) = √(35.35/3.14) ≈ √11.26 ≈ 3.36 m<br /><br />
+            <strong>Explanation:</strong><br />
+            Pressure is transmitted equally. The large piston has much greater
+            area, allowing a small force to lift a heavy load (mechanical
+            advantage).
+          </div>
+        </div>
+
+        <div class="long-question-block">
+          <span class="question-text"
+            >Q.17 A block of mass 3kg is left from the top of a building. How
+            much time will the block take to reach the ground if it strike the
+            ground with a speed of 80m/s. (ignore air resistance). Also
+            calculate the height from which the block was dropped.</span
+          >
+          <div class="answer-text">
+            <strong>Given:</strong><br />
+            Mass m = 3 kg<br />
+            Final speed v = 80 m/s<br />
+            u = 0, g = 10 m/s² (standard school value)<br /><br />
+            <strong>Required:</strong><br />
+            Time t and height h.<br /><br />
+            <strong>Solution:</strong><br />
+            Using v = u + gt:<br />
+            80 = 0 + 10t → t = 8 s<br /><br />
+            Using v² = u² + 2gh:<br />
+            80² = 0 + 2 × 10 × h<br />
+            6400 = 20h → h = 320 m<br /><br />
+            <strong>Explanation:</strong><br />
+            Free-fall equations (constant acceleration g). Time is found from
+            velocity-time relation; height from velocity-displacement relation.
+            Air resistance ignored, so motion is purely under gravity.
+          </div>
+        </div>
+
+        <div class="long-question-block">
+          <span class="question-text"
+            >Q.18 Calculate the force required to lift the car weighing 2500kg
+            by a hydraulic jack whose small piston has an area of 6cm² Whereas
+            its large piston has an area of 90cm².</span
+          >
+          <div class="answer-text">
+            <strong>Given:</strong><br />
+            Mass of car = 2500 kg → F₂ = 2500 × 10 = 25,000 N<br />
+            A₁ = 6 cm² = 6 × 10⁻⁴ m²<br />
+            A₂ = 90 cm² = 9 × 10⁻³ m²<br /><br />
+            <strong>Required:</strong><br />
+            Force on small piston F₁.<br /><br />
+            <strong>Solution:</strong><br />
+            F₁/A₁ = F₂/A₂<br />
+            F₁ = F₂ × (A₁/A₂) = 25,000 × (6 × 10⁻⁴)/(9 × 10⁻³) = 25,000 × (6/90)
+            = 25,000 × (1/15) ≈ 1667 N<br /><br />
+            <strong>Explanation:</strong><br />
+            Hydraulic systems multiply force by area ratio. Small effort on
+            small piston lifts heavy load on large piston.
+          </div>
+        </div>
+
+        <div class="long-question-block">
+          <span class="question-text"
+            >Q.19 A hydraulic lift has 0.003m² narrow cylinder area while 0.9m²
+            wider cylinder area. How much force must be applied at the narrow
+            cylinder if a car weighing 1600kg is to be lifted?</span
+          >
+          <div class="answer-text">
+            <strong>Given:</strong><br />
+            A₁ (narrow) = 0.003 m²<br />
+            A₂ (wide) = 0.9 m²<br />
+            Mass = 1600 kg → F₂ = 1600 × 10 = 16,000 N<br /><br />
+            <strong>Required:</strong><br />
+            Force F₁ on narrow cylinder.<br /><br />
+            <strong>Solution:</strong><br />
+            F₁ = F₂ × (A₁/A₂) = 16,000 × (0.003/0.9) = 16,000 × (1/300) ≈ 53.3
+            N<br /><br />
+            <strong>Explanation:</strong><br />
+            Area ratio gives mechanical advantage of 300. Very small force lifts
+            the car due to pressure transmission.
+          </div>
+        </div>
+
+        <div class="long-question-block">
+          <span class="question-text"
+            >Q.20 Calculate the force required to lift car weighing 2000kg by a
+            hydraulic jack's whose small piston has an area of 4 cm² whereas its
+            large piston has an area of 80 cm².</span
+          >
+          <div class="answer-text">
+            <strong>Given:</strong><br />
+            Mass = 2000 kg → F₂ = 20,000 N<br />
+            A₁ = 4 cm² = 4 × 10⁻⁴ m²<br />
+            A₂ = 80 cm² = 8 × 10⁻³ m²<br /><br />
+            <strong>Required:</strong><br />
+            F₁<br /><br />
+            <strong>Solution:</strong><br />
+            F₁ = 20,000 × (4 × 10⁻⁴)/(8 × 10⁻³) = 20,000 × (4/80) = 20,000 ×
+            0.05 = 1000 N<br /><br />
+            <strong>Explanation:</strong><br />
+            Force ratio equals inverse area ratio. Simple application of
+            Pascal's principle.
+          </div>
+        </div>
+
+        <div class="long-question-block">
+          <span class="question-text"
+            >Q.21 How much pressure does a suitcase of 15N exert on the table if
+            it's base is 0.8m long and 0.5m wide?</span
+          >
+          <div class="answer-text">
+            <strong>Given:</strong><br />
+            Force F = 15 N (weight)<br />
+            Area A = 0.8 m × 0.5 m = 0.4 m²<br /><br />
+            <strong>Required:</strong><br />
+            Pressure P.<br /><br />
+            <strong>Solution:</strong><br />
+            P = F/A = 15/0.4 = 37.5 Pa<br /><br />
+            <strong>Explanation:</strong><br />
+            Pressure is force per unit area. Larger base area reduces pressure
+            for the same weight.
+          </div>
+        </div>
+
+        <div class="long-question-block">
+          <span class="question-text"
+            >Q.22 A Submarine was moving in the Pacific Ocean at a depth of 6km.
+            How much pressure is exerted upon the submarine if density of water
+            is 1000kg m⁻³?</span
+          >
+          <div class="answer-text">
+            <strong>Given:</strong><br />
+            Depth h = 6 km = 6000 m<br />
+            ρ = 1000 kg/m³<br />
+            g = 10 m/s²<br /><br />
+            <strong>Required:</strong><br />
+            Pressure (hydrostatic).<br /><br />
+            <strong>Solution:</strong><br />
+            P = ρgh = 1000 × 10 × 6000 = 6 × 10⁷ Pa = 60 MPa<br />
+            (Note: This is gauge pressure; total pressure would add 1 atm ≈ 0.1
+            MPa.)<br /><br />
+            <strong>Explanation:</strong><br />
+            Pressure increases linearly with depth due to the weight of water
+            column above. At 6 km, it is enormous, explaining why submarines
+            need strong hulls.
+          </div>
+        </div>
+
+        <div class="long-question-block">
+          <span class="question-text"
+            >Q.23 How powerful is car engine if it does 3 × 10⁷ Joule of work in
+            1 minute.</span
+          >
+          <div class="answer-text">
+            <strong>Given:</strong><br />
+            Work W = 3 × 10⁷ J<br />
+            Time t = 1 min = 60 s<br /><br />
+            <strong>Required:</strong><br />
+            Power P.<br /><br />
+            <strong>Solution:</strong><br />
+            P = W/t = (3 × 10⁷)/60 = 5 × 10⁵ W = 500 kW<br /><br />
+            <strong>Explanation:</strong><br />
+            Power is rate of doing work. 500 kW is a very powerful engine
+            (typical sports car range).
+          </div>
+        </div>
+
+        <div class="long-question-block">
+          <span class="question-text"
+            >Q.24 A box is dragged across the floor for 10m with 50N force in
+            direction of movement. Calculate work done.</span
+          >
+          <div class="answer-text">
+            <strong>Given:</strong><br />
+            Force F = 50 N (in direction of displacement)<br />
+            Displacement d = 10 m<br /><br />
+            <strong>Required:</strong><br />
+            Work W.<br /><br />
+            <strong>Solution:</strong><br />
+            W = F d cosθ = 50 × 10 × cos 0° = 500 J<br /><br />
+            <strong>Explanation:</strong><br />
+            Work is force times displacement in the direction of force. Since
+            force and displacement are parallel, cos0° = 1.
+          </div>
+        </div>
+
+        <div class="long-question-block">
+          <span class="question-text"
+            >Q.25 Show that E_p (grav) = mgh with a neat sketch.</span
+          >
+          <div class="answer-text">
+            <strong>Given:</strong><br />
+            Mass m lifted to height h against gravity g.<br /><br />
+            <strong>Required:</strong><br />
+            Prove gravitational potential energy E_p = mgh.<br /><br />
+            <strong>Solution:</strong><br />
+            Work done to lift the mass slowly = force applied × distance<br />
+            Force applied = mg (to balance weight)<br />
+            Distance = h<br />
+            Therefore,<br />
+            E_p = work done = mg × h = mgh<br /><br />
+            <strong>Sketch description (neat textual representation):</strong
+            ><br />
+            Ground level ─────────── (reference)<br />
+            ↑ h<br />
+            Mass m (at height h)<br />
+            ↓ mg (weight)<br />
+            Force applied upward = mg (to lift)<br /><br />
+            <strong>Explanation:</strong><br />
+            The energy stored is exactly the work done against gravity. When the
+            mass falls back, this potential energy converts to kinetic energy,
+            confirming the formula.
+          </div>
+        </div>
+
+        <div class="long-question-block">
+          <span class="question-text"
+            >Q.26 A solid cylinder of height 1.25m and diameter of 2m has a mass
+            350kg. Calculate its density.</span
+          >
+          <div class="answer-text">
+            <strong>Given:</strong><br />
+            Height h = 1.25 m<br />
+            Diameter = 2 m → r = 1 m<br />
+            Mass m = 350 kg<br /><br />
+            <strong>Required:</strong><br />
+            Density ρ.<br /><br />
+            <strong>Solution:</strong><br />
+            Volume V = πr²h = π × (1)² × 1.25 = 1.25π m³<br />
+            ρ = m/V = 350/(1.25π) ≈ 350/3.927 ≈ 89.1 kg/m³<br /><br />
+            <strong>Explanation:</strong><br />
+            Density = mass/volume. Cylinder volume formula is standard. The low
+            density suggests a light material.
+          </div>
+        </div>
+
+        <div class="long-question-block">
+          <span class="question-text"
+            >Q.27 A solid cylinder of height 1.5m and diameter of 0.5m has a
+            mass 280kg. Calculate its density.</span
+          >
+          <div class="answer-text">
+            <strong>Given:</strong><br />
+            h = 1.5 m<br />
+            Diameter = 0.5 m → r = 0.25 m<br />
+            m = 280 kg<br /><br />
+            <strong>Required:</strong><br />
+            Density ρ.<br /><br />
+            <strong>Solution:</strong><br />
+            V = πr²h = π × (0.25)² × 1.5 = π × 0.0625 × 1.5 = 0.09375π m³ ≈
+            0.2945 m³<br />
+            ρ = 280/0.2945 ≈ 951 kg/m³<br /><br />
+            <strong>Explanation:</strong><br />
+            Same formula as Q.26. Density is close to water, typical for some
+            woods or plastics.
+          </div>
+        </div>
+
+        <div class="long-question-block">
+          <span class="question-text"
+            >Q.28 A 70cm 10cm 30cm plastic box has mass of 2500g. Find the
+            density of plastic?</span
+          >
+          <div class="answer-text">
+            <strong>Given:</strong><br />
+            Dimensions: 70 cm × 10 cm × 30 cm = 0.7 m × 0.1 m × 0.3 m<br />
+            Mass = 2500 g = 2.5 kg<br /><br />
+            <strong>Required:</strong><br />
+            Density of plastic.<br /><br />
+            <strong>Solution:</strong><br />
+            Volume V = length × width × height = 0.7 × 0.1 × 0.3 = 0.021 m³<br />
+            ρ = 2.5/0.021 ≈ 119 kg/m³<br /><br />
+            <strong>Explanation:</strong><br />
+            For a rectangular box, volume is simply lwh. The low density
+            indicates the plastic is lightweight/foamed type. All units
+            converted to SI for consistency.
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="right">
+      <div style="height: 100%; overflow-y: auto; border: 1px solid #e2e8f0; border-radius: 8px; padding: 25px; box-sizing: border-box; background-color: #fafafa; font-family: 'Segoe UI', system-ui, sans-serif; font-size: 14.5px; line-height: 1.8; color: #334155; white-space: pre-wrap; box-shadow: inset 0 2px 4px rgba(0,0,0,0.02);"><h2 style="font-size: 1.5em; color: #1e293b; border-bottom: 2px solid #3b82f6; padding-bottom: 8px; margin-top: 0; margin-bottom: 15px; font-weight: 600;">SHORT QUESTIONS</h2>
+1. Differentiate between physical and non-physical quantities.
+2. Differentiate between base and derived physical quantities. Give 3 examples of each with Symbol & SI units.
+3. Analyze and express numerical data, using scientific notation/standard form and prefixes. (practice)
+4. Show 4000 nano-grams in micro-grams. (Practice)
+5. Show that Prefix micro is thousand times smaller than prefix Milli.
+6. How many kilometers are there in 25 micrometers.
+7. Differentiate between scalar and vector quantities.
+8. Justify that distance, speed, time, mass, energy, and temperature are scalar quantities.
+9. Justify that displacement, force; weight, velocity, acceleration, momentum, electric field strength and
+gravitational field strength are vector quantities.
+10. Enlist steps to represent the vector in coordinate system.
+11. Differentiate between precision and accuracy.
+12. Estimate your age in seconds and minutes.
+13. Differentiate between mechanical and digital stop watch.
+14. What base quantities are involved in these derived physical quantities force, pressure, power, and charge.
+15. Is it possible to accelerate an object without speeding up or slowing down. Justify. (Chapter#2)
+16. Differentiate between average and instantaneous speed.
+17. Differentiate-uniform and non-uniform velocity.
+18. Define acceleration & deceleration.
+19. Differentiate-uniform & non-uniform acceleration.
+20. Can direction of velocity and acceleration be in opposite direction? Explain briefly.
+21. Differentiate between mass and weight. (Chapter#3)
+22. Differentiate - contact and non-contact forces.
+23. Differentiate between different types of forces [including weight (gravitational force), friction, drag, air resistance,
+tension (elastic force), electrostatic force, magnetic force, trust (driving force) and contact force].
+24. State that there are three fundamental forces (gravitational strong and electro weak forces).
+25. State the limitations of Newton's laws of motion.
+26. State apply Newton first, second and third law.
+27. Deduce Newton first law from Newton's Second Law.
+28. Why the cricket batter gloves padded with foam?
+29. State Newton's second law of motion in terms of acceleration. Write its mathematical forms.
+30. How do you use newton 3rd law of motion and law of conservation of momentum to explain motion of rocket/
+gun/bullet.
+31. Explain the relationship between newtons law and law of conservation of momentum.
+32. Define and calculate momentum, impulse and resultant force in terms of momentum.
+33. Differentiate between rolling and sliding friction. (Chapter#4)
+34. Briefly describe any three methods to reduce friction.
+35. Write advantages and disadvantages of friction?
+36. Differentiate- like and unlike Parallel forces.
+37. Compare 'center of mass' and 'center of gravity'.
+38. How the stability of an object can be improved?
+39. Why do ice skates effortlessly slide on ice, while your shoes cause skidding?
+40. How does the concentration of communications satellites in geostationary orbit to maintain a specific speed?
+41. How does centripetal force play an important role in keeping car from skidding off when driver take curve too
+fast?
+42. Why sky seems blue in colour? What is meant by GPS?
+43. Define principle of moments and its types i.e. anticlockwise and clockwise.
+44. Define and calculate the spring constant. (Chapter#5)
+45. Define Hooke's law. Write applications of Hooke's Law & its formula.
+46. How can a small lifter lifts load heavier than itself?
+47. Why do static fluids always exert a force perpendicular to the surface?
+48. Define and calculate pressure. Define and calculate efficiency.
+49. Describe how pressure varies with force and area in the context of everyday examples.
+50. Justify that the atmosphere exerts a pressure.
+51. Describe that atmospheric pressure decreases with the increase in height above the Earth's surface.
+52. Explain that changes in atmospheric pressure in a region may indicate a change in the weather.
+53. Differentiate between manometer and barometer.
+54. Analyze the workings and applications of a liquid barometer and manometer. (Liquid Pressure)
+55. How does the shape of a thumb pin help penetrate surface easily?
+
+56. State and apply the principle of the conservation of energy. (Chapter#6)
+57. Why perpetual energy machines do not work.
+58. Differentiate between renewable and non- renewable energy and list renewable and non-renewable energy.
+59. Describe how useful energy may be obtained from biofuels, chemical energy stored in fossil fuels, geothermal
+resource.
+60. Define work & power. Also define their SI Units and calculate power.
+61. State that a system cannot have an efficiency of 100% due to unavoidable energy losses.
+62. A perpetual engine has an efficiency of 1. Why it will not work?
+63. How can increasing the power of machine impact its energy consumption?
+64. A car has kinetic energy Ek. By what factors its KE would change if the velocity is doubled?
+65. A car is moving with a constant speed along a straight road. Is there any work done on the car?
+66. Explain that energy may be stored [such as gravitational potential, chemical, elastic (strain), nuclear,
+electrostatic and internal (thermal) energies].
+67. Briefly explain the relationship between internal energy and temperature of a body. (Chapter#7)
+68. Describe plasma as a fourth state of matter.
+69. Describe the relationship between the motion of particles and temperature. (absolute zero and also draw
+graph).
+70. Describe the relationship between the motion of particles and temperature.
+71. Justify the need for fixed points in the calibration of thermometers [Including what is meant by the ice point and
+steam point.].
+72. How catalyst can increase the rate of reaction?
+73. Describe the structure and function of liquid-in-glass.
+74. Can we increase Internal energy of a substance without increasing its temperature? Why water is not used in
+liquid in glass thermometer?
+75. Describe the forces between magnetic poles and between magnets and magnetic materials [including the use
+of the terms: north pole (N pole), South Pole (S pole), attraction and repulsion, magnetized and un-magnetized].
+(Chapter#8)
+76. Describe induced magnetism.
+77. Draw the pattern and direction of the magnetic field lines around a bar magnet.
+78. State the difference between magnetic and non- magnetic materials.
+79. Differentiate between temporary magnets /permanent magnets & electromagnets.
+80. At what factors the strength of the magnetic field of an electromagnet depends?
+81. What is neutral zone?
+82. Is there any material that does not have any magnetic behaviour? Justify your answer.
+83. What is magnetic fields. Sketch magnetic field lines around a bar magnet.
+84. State that soft magnetic materials such as soft iron can be used to provide shielding from magnetic fields.
+85. Analyze applications of magnets in recording technology.
+86. Describe the nature of the Earth's magnetic field. [Specifically, that: - is opposite to its geographical north-south
+orientation - protects life on the planet from cosmic radiation - allows animals that make use of biomagnetism
+(e.g. many birds and turtles) to navigate during migration].
+87. Describe uses of permanent magnets and electromagnets in daily life.
+88. State that the direction of the magnetic field at a point is the direction of the force on the N pole of a magnet at
+that point.
+89. Define the terms 'hypothesis', theory' and 'law'. How is theory developed? (Chapter#9)
+90. Differentiate the terms 'science', 'technology' and 'engineering' with suitable examples.
+91. Which part of the Study is not handled by classical study of physics?
+<h2 style="font-size: 1.5em; color: #1e293b; border-bottom: 2px solid #ef4444; padding-bottom: 8px; margin-top: 35px; margin-bottom: 15px; font-weight: 600;">LONG QUESTIONS</h2>
+
+92. What is Error? Explain its types. Also identifying sources of systematic and random error in measurements and
+suggesting steps to correct them.
+93. Sketch, plot and interpret distance – time and Speed-time graphs when an object is: (a) at rest, (b) Moving with
+constant speed (c) moving with constant acceleration (d) moving with changing acceleration.
+94. Analyze the Distance travelled in speed vs time graphs [by determining the area under the graph for cases of
+motion with constant speed or constant acceleration].
+95. Justify how the gradient of the speed vs time graph gives the acceleration.
+96. Write a Complete note on Gravitational Field strength.
+97. What is equilibrium? Explain its types also state its conditions. (examples/mathematical relation).
+98. What is terminal velocity? On what factors does the drag force acting on a falling body depends? Explain.
+99. What is centripetal force? And also identify the sources of centripetal force in real life examples [e.g. tension in
+a string for a stone being swirled around, gravity for the Moon orbiting the Earth].
+100. Define and apply Pascal's law [Apply Pascal's law to systems such as the transmission of pressure in
+hydraulic system with particular reference to hydraulic press and Hydraulic brakes on vehicles.].
+101. How are hydraulic lifts capable of lifting heavy loads. Derive a mathematical formula. (No need of a diagram).
+
+102. Prove that Kinetic Energy Ek = 1/2 mv2 [use of equations of motion not needed; proof through kinematic
+graphs will suffice].
+103. Prove and use the formula for Gravitational potential energy.
+104. Show that liquid in a container exerts pressure equal to P = pgh. What is the effect of depth on pressure of
+liquid.
+105. Justify and illustrate how to determine the density of a substance [Including for a liquid of regular shaped
+solid and of an irregularly shaped solids which sinks in a liquid (volume by a displacement), including
+appropriate calculations].
+106. Describe, qualitatively, the particle structure of solids, liquids and gasses. [including relating their properties
+to the forces and distance between particles and to the motion of the particles (atoms, molecules, ions and
+electrons)].
+107. Describe the relationship between the motion of particles and temperature [Including the idea that there is
+lowest possible temperature (approximately -273°C), known as absolute zero, where the particles have least
+kinetic energy].
+108. Explain, with examples, how a physical property which varies with temperature may be used for the
+measurement of temperature.
+109. Describe the construction and working of different types of gas thermometers.
+110. Analyze how structure of liquid in glass thermometer can be modified to improve its performance.
+111. Explain any two states of matter. Giving complete information about their particle structures with diagrams?
+112. Write working of thermocouple thermometers.
+113. What is meant by the sensitivity, range and linearity of thermometers? Explain each in detail.
+114. Explain qualitatively in terms of the domain theory of magnetism how materials can be magnetized and
+demagnetized [Stroking method, heating, orienting in north-south direction and striking, use of a solenoid].
+115. Differentiate between ferromagnetic, paramagnetic and diamagnetic materials [by making reference to the
+domain theory of magnetism and effect of external magnetic fields on these materials].
+
+116. Describe the nature of the Earth's magnetic field [Specifically that: - is opposite to its geographical north-
+south orientation - protects life on the planet from cosmic radiation - allows animals that make use of
+
+biomagnetism (e.g. many birds and turtles) to navigate during migration].
+117. Explain with examples that physics has many sub- fields, and in today's world involves interdisciplinary fields.
+(Note: Memorize any ten fields of physics).
+
+<h2 style="font-size: 1.5em; color: #1e293b; border-bottom: 2px solid #10b981; padding-bottom: 8px; margin-top: 35px; margin-bottom: 15px; font-weight: 600;">MOST IMPORTANT NUMERICALS</h2>
+
+Note: Numerical values may be changed in the paper. Students are advised to practice with different values.
+
+Question Question
+
+Q.1
+(a) Show 6000 nano-grams in micro grams
+(b) Show 6000 nano grams in milli grams.
+
+Q.2
+Express the following quantities using prefixes:
+(a) 3000 g (b) 572 × 10− 8 s
+
+Q.3
+Express the following using prefixes:
+i. 29.3 × 10− 3 m
+ii. 0.00034 × 10− 2 s
+
+Q.4
+How many kilometers are there in 25 micrometers?
+
+Q.5
+Show that prefix micro is thousand times smaller than
+prefix milli.
+
+Q.6
+A train travelled a distance of 30 kilometers in 7 minutes
+and 30 seconds. What is its speed? Convert the speed
+into km/h.
+
+Q.7
+Which is more difficult to stop in 5 second and why?
+1. A 2500kg car moving with v1 =10ms− 1
+2. A 5000 kg van moving with V1 =4ms− 1
+
+Q.8
+Velocity v of a car increases uniformly from 15m/s to
+25m/s. Find its V_av and acceleration.
+
+Q.9
+What is average speed if it completes a circle of radius
+200m in 5 minutes?
+
+Q.10
+An object weighs 300N on earth while 100N on an
+unknown planet. Find the gravitational field of that
+planet.
+
+Q.11
+A riffle of mass 5kg fires a bullet of mass 20g forwards
+with a velocity of 300ms− 1. What is the recoil velocity of
+the riffle?
+
+Q.12
+Mercury completes one revolution around the sun in 88
+days. Find the orbital speed of Mercury around the sun
+if it is 57.9×106 km away from the sun.
+
+Q.13 Q.14
+
+Earth complete 1 revolution around the earth in 365.25
+days. Find the orbital speed of earth around the sun if it
+is 150 million km away from the sun.
+
+A long uniform steel bar of length of 100cm is balanced
+on a wedge at its middle. Two weights W1 and W2 are
+suspended at distance of 0.2m and 0.4m respectively
+form the wedge. If weight W1 is 70N then find weight
+W2 .
+
+Q.15
+If a satellite orbits Earth at an average radius of 18,000
+km and takes 9 hours to complete one orbit. What will
+be average orbital speed?
+
+Q.16
+A hydraulic press lifts mass of 500 kg when we apply
+force of 10N on small piston. Radius of its small piston
+is 15cm, find the radius of its large piston.
+
+Q.17
+A block of mass 3km is left from the top of a building.
+How much time will the block take to reach the ground if
+it strike the ground with a speed of 80m/s. (ignore air
+resistance). Also calculate the height from which the
+block was dropped.
+
+Q.18
+Calculate the force required to lift the car weighing
+2500kg by a hydraulic jack whose small piston has an
+area of 6cm2 Whereas its large piston has an area of
+90cm2.
+
+Q.19
+A hydraulic lift has 0.003m2 narrow cylinder area while
+0.9m2 wider cylinder area. How much force must be
+applied at the narrow cylinder if a car weighing 1600kg
+is to be lifted?
+
+Q.20
+Calculate the force required to lift car weighing 2000kg
+by a hydraulic jack's whose small piston has an area of
+4 cm2 whereas its large piston has an area of 80 cm2.
+
+Q.21
+How much pressure does a suitcase of 15N exert on
+the table if it's base is 0.8m long and 0.5m wide?
+
+Q.22
+A Submarine was moving in the Pacific Ocean at a
+depth of 6km. How much pressure is exerted upon the
+submarine if density of water is 1000kg m− 3?
+
+Q.23
+How powerful is car engine if it does 3 × 107 Joule of
+work in 1 minute.
+
+Q.24
+A box is dragged across the floor for 10m with 50N
+force in direction of movement. Calculate work done.
+
+Q.25
+Show that E_p (grav) = mgh with a neat sketch.
+
+Q.26
+A solid cylinder of height 1.25m and diameter of 2m has
+a mass 350kg. Calculate its density.
+
+Q.27
+A solid cylinder of height 1.5m and diameter of 0.5m
+has a mass 280kg. Calculate its density.
+
+Q.28
+A 70cm 10cm 30cm plastic box has mass of 2500g.
+Find the density of plastic?</div>
+    </div>
+    </div>
+    <div class="footer">
+      Made for Physics Revision • End of Question Set by @HasnainAli
+    </div>
+  </body>
+</html>
